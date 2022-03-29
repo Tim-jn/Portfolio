@@ -1,10 +1,12 @@
-import './App.scss';
+import './App.scss'
+import Title from './Components/Title'
 
 function App() {
   return (
-    <div className="App">
-    </div>
-  );
+    <main className="App">
+      <Title />
+    </main>
+  )
 }
 
-export default App;
+export default App
