@@ -1,13 +1,89 @@
 @import 'styles/shared';
 
 * {
-  cursor: default;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font-fam;
 }
 
 body {
-  margin: 0;
   background: $primary-bg-color;
-  font-family: $primary-font-fam;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+// Sidebar => TODO REMOVE UNECESSARY STYLES
+
+.sidebar {
+  height: 100%;
+  width: 240px;
+  background: $secondary-bg-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 6px 14px;
+}
+
+.sidebar .logo-content .logo {
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+}
+
+.sidebar .btn {
+  position: absolute;
+  color: $third-font-color;
+  left: 90%;
+  top: 6px;
+  font-size: 20px;
+  width: 20px;
+  height: 50px;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+
+.sidebar ul {
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.sidebar ul li a {
+  color: $secondary-font-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a .icons {
+  height: 50px;
+  width: 20px;
+  font-size: 20px;
+  color: $third-font-color;
+  line-height: 50px;
+  margin-right: 20%;
+}
+
+.sidebar ul li a:hover {
+  color: $third-font-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  transition: all 0.3s;
 }
 
 // Title
@@ -85,4 +161,12 @@ body {
       0% 100%
     );
   }
+}
+
+.under-title {
+  color: $secondary-font-color;
+  position: absolute;
+  top: 64%;
+  left: 0;
+  font-weight: 400;
 }

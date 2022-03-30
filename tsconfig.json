@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/babel-plugin-macros.config.jssrc/babel.config.jsg.js"  ]
 }
