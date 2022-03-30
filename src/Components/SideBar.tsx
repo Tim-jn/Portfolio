@@ -20,7 +20,7 @@ export default function SideBar() {
         <li>
           <a href="#profile">
             <FontAwesomeIcon className="icons" icon={faAddressCard} />
-            <span className="link-name">Who I am ?</span>
+            <span className="link-name">Who am I ?</span>
           </a>
         </li>
         <li>
