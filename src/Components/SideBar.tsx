@@ -1,10 +1,12 @@
 import logo from '../assets/logo.png'
+import profilePic from '../assets/PP-Tim.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
   faLaptopCode,
   faAddressCard,
   faFolderOpen,
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function SideBar() {
@@ -35,7 +37,24 @@ export default function SideBar() {
             <span className="link-name">My work</span>
           </a>
         </li>
+        <li>
+          <a href="#work">
+            <FontAwesomeIcon className="icons" icon={faEnvelope} />
+            <span className="link-name">Contact</span>
+          </a>
+        </li>
       </ul>
+      <div className="profile-content">
+        <div className="profile">
+          <div className="profile-details">
+            <img src={profilePic} alt="Tim Jeanmart" />
+            <div className="name-job">
+              <div className="name">Tim Jeanmart</div>
+              <div className="job">Front end developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
