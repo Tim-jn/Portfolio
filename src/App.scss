@@ -17,11 +17,45 @@ body {
 }
 
 .home {
+  position: relative;
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
   background-position-y: 100%;
   background-position-x: 100%;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3cpath d='M269.68 587.68C434.48 583.75 560.92 358.49 885.88 353.01 1210.84 347.53 1341.66 175.62 1502.08 173.81' stroke='rgba(127%2c 255%2c 212%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M813.4 589.1C928.85 546.88 886.18 201.58 1115.49 201.15 1344.8 200.72 1556.61 442.87 1719.67 447.55' stroke='rgba(127%2c 255%2c 212%2c 0.8)' stroke-width='2'%3e%3c/path%3e%3cpath d='M445.62 633.15C594.79 631.56 713.85 475.94 1019.41 469.35 1324.97 462.76 1436.07 217.57 1593.2 211.75' stroke='rgba(127%2c 255%2c 212%2c 0.4)' stroke-width='2'%3e%3c/path%3e%3cpath d='M605.04 617.52C763.81 600.2 862.5 253.83 1129.61 252.91 1396.71 251.99 1516.9 413.47 1654.17 415.31' stroke='rgba(127%2c 255%2c 212%2c 0.6)' stroke-width='2'%3e%3c/path%3e%3cpath d='M585.58 637.04C727.65 634.57 834.69 461.79 1123.77 454.26 1412.86 446.73 1514.67 218.87 1661.97 213.46' stroke='rgba(127%2c 255%2c 212%2c 0.2)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+// Social bar
+
+.social-bar {
+  width: 7%;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: $secondary-bg-color;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-bar a {
+  text-decoration: none;
+  color: $third-font-color;
+}
+
+.social-icons {
+  cursor: pointer;
+  height: 28px;
+  width: 21px;
+}
+
+.social-icons:hover {
+  height: 30px;
+  width: 25px;
+  transition: all 0.3s ease;
 }
 
 // Sidebar
