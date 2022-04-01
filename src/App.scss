@@ -102,9 +102,10 @@ body {
   transition: 0s;
   opacity: 0;
   pointer-events: none;
-  background: $secondary-font-color;
+  background: $primary-bg-color;
+  border: 2px solid $third-font-color;
   font-weight: bold;
-  color: $secondary-bg-color;
+  color: $secondary-font-color;
   display: block;
   white-space: nowrap;
 }
@@ -148,12 +149,27 @@ body {
 .sidebar-active .link-name {
   opacity: 1;
   pointer-events: auto;
+  position: relative;
 }
 
-.sidebar ul li a:hover {
+.sidebar-active .link-name::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: $third-font-color;
+}
+
+.sidebar-active .link-name:hover {
   color: $third-font-color;
-  font-size: 17px;
-  transition: all 0.15s;
+  transition: all 0.25s ease;
+}
+
+.sidebar-active .link-name:hover:after {
+  width: 100%;
+  transition: all 0.25s ease;
 }
 
 .sidebar .profile-content {

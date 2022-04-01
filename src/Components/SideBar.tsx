@@ -54,7 +54,10 @@ export default function SideBar() {
         <li>
           <a href="#contact">
             <FontAwesomeIcon className="icons" icon={faEnvelope} />
-            <span className="link-name">Contact</span>
+            <div className="link-sidebar">
+              <div className="slide-sidebar"></div>
+              <span className="link-name">Contact</span>
+            </div>
           </a>
           <span className="tooltip">Contact</span>
         </li>
