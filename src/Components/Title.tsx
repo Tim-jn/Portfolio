@@ -20,7 +20,7 @@ export default function Title() {
         <h1 className="main-title-animated">a web developer</h1>
         <h1 className="main-title-animated">a web developer</h1>
       </div>
-      <ContactBtn />
+      <ContactBtn className="contact-btn"/>
     </div>
   )
 }

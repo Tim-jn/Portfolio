@@ -11,7 +11,7 @@ import {
 import { useState } from 'react'
 
 export default function SideBar() {
-  const [toggle, setToggle] = useState(true)
+  const [toggle, setToggle] = useState(false)
 
   const toggleSidebar = () => {
     setToggle(!toggle)
