@@ -1,4 +1,3 @@
-import logo from '../assets/logo.png'
 import profilePic from '../assets/PP-Tim.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -20,9 +19,6 @@ export default function SideBar() {
   return (
     <div className={!toggle ? 'sidebar' : 'sidebar sidebar-active'}>
       <div className="logo-content">
-        <div className="logo">
-          {/* <img src={logo} alt="Tim Jeanmart Logo" /> */}
-        </div>
         <FontAwesomeIcon
           className="btn icons"
           icon={faBars}

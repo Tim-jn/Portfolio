@@ -10,6 +10,7 @@ export default function SocialBar() {
         target="_blank"
         rel="noreferrer"
       >
+        <span className="social-text">LinkedIn</span>
         <FontAwesomeIcon className="social-icons" icon={faLinkedin} />
       </a>
       <a
@@ -18,6 +19,8 @@ export default function SocialBar() {
         target="_blank"
         rel="noreferrer"
       >
+        {' '}
+        <span className="social-text"> GitHub</span>
         <FontAwesomeIcon className="social-icons" icon={faGithub} />
       </a>
     </div>

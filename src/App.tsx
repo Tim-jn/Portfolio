@@ -6,7 +6,7 @@ import Title from './Components/Title'
 function App() {
   return (
     <main className="App">
-      <section className="home">
+      <section id="home" className="home">
         <SocialBar />
         <Title />
         <SideBar />
