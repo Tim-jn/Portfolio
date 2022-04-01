@@ -8,15 +8,26 @@ import {
   faFolderOpen,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
 
 export default function SideBar() {
+  const [toggle, setToggle] = useState(true)
+
+  const toggleSidebar = () => {
+    setToggle(!toggle)
+  }
+
   return (
-    <div className="sidebar">
+    <div className={!toggle ? 'sidebar' : 'sidebar sidebar-active'}>
       <div className="logo-content">
         <div className="logo">
           {/* <img src={logo} alt="Tim Jeanmart Logo" /> */}
         </div>
-        <FontAwesomeIcon className="btn icons" icon={faBars} />
+        <FontAwesomeIcon
+          className="btn icons"
+          icon={faBars}
+          onClick={toggleSidebar}
+        />
       </div>
       <ul className="nav-list">
         <li>

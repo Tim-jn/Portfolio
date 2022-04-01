@@ -5,8 +5,10 @@ import Title from './Components/Title'
 function App() {
   return (
     <main className="App">
-      <Title />
-      <SideBar />
+      <section className="home">
+        <Title />
+        <SideBar />
+      </section>
     </main>
   )
 }
