@@ -1,7 +1,7 @@
 import './App.scss'
-import SideBar from './Components/SideBar'
-import SocialBar from './Components/SocialBar'
-import Title from './Components/Title'
+import SideBar from './Components/SideBar/SideBar'
+import SocialBar from './Components/SocialBar/SocialBar'
+import Title from './Components/Title/Title'
 
 function App() {
   return (

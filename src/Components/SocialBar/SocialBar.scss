@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+.social-bar {
+  width: 7%;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: $secondary-bg-color;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-bar a {
+  text-decoration: none;
+  color: $third-font-color;
+}
+
+.social-icons {
+  cursor: pointer;
+  height: 28px;
+  width: 21px;
+}
+
+.social-icons:hover {
+  height: 30px;
+  width: 25px;
+  transition: all 0.3s ease;
+}
+
+.social-text {
+  font-size: 0;
+}

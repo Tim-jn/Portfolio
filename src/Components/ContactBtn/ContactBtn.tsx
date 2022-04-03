@@ -1,3 +1,5 @@
+import './ContactBtn.scss'
+
 export default function ContactBtn({ className }: Props) {
   return (
     <button className={className}>

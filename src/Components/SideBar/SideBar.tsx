@@ -1,4 +1,4 @@
-import profilePic from '../assets/PP-Tim.jpg'
+import profilePic from '../../assets/PP-Tim.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
@@ -8,6 +8,7 @@ import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import './SideBar.scss'
 
 export default function SideBar() {
   const [toggle, setToggle] = useState(false)

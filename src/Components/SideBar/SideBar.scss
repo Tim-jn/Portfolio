@@ -1,0 +1,178 @@
+@import '../../App.scss';
+
+.sidebar {
+  height: 100%;
+  width: 64px;
+  background: $secondary-bg-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 6px 14px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-active {
+  width: 240px;
+}
+
+.sidebar .btn {
+  position: absolute;
+  color: $third-font-color;
+  left: 50%;
+  top: 6px;
+  width: 20px;
+  height: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.sidebar-active .btn {
+  left: 90%;
+}
+
+.sidebar ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar ul li {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  margin: 0 10%;
+  list-style: none;
+  cursor: pointer;
+}
+
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 120px;
+  top: 0px;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  padding: 10px 0px;
+  width: 125px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0s;
+  opacity: 0;
+  pointer-events: none;
+  background: $primary-bg-color;
+  border: 2px solid $third-font-color;
+  font-weight: bold;
+  color: $secondary-font-color;
+  display: block;
+  white-space: nowrap;
+}
+
+.sidebar-active ul li .tooltip {
+  display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+  top: 36%;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a {
+  color: $secondary-font-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.sidebar ul li a .icons {
+  height: 50px;
+  width: 28px;
+  color: $third-font-color;
+  margin-right: 15%;
+}
+
+.sidebar-active ul li a .icons {
+  text-align: center;
+}
+
+.sidebar .link-name {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+.sidebar-active .link-name {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+
+.sidebar-active .link-name::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: $third-font-color;
+}
+
+.sidebar-active .link-name:hover {
+  color: $third-font-color;
+  transition: all 0.25s ease;
+}
+
+.sidebar-active .link-name:hover:after {
+  width: 100%;
+  transition: all 0.25s ease;
+}
+
+.sidebar .profile-content {
+  position: absolute;
+  color: #fff;
+  bottom: 20px;
+  left: 10%;
+}
+
+.sidebar .profile-content .profile {
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+}
+
+.sidebar .profile .profile-details {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.sidebar-active .profile .profile-details {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.profile .profile-details img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.profile .profile-details .name-job {
+  margin-left: 10px;
+  color: $secondary-font-color;
+}
+
+.profile .profile-details .name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profile .profile-details .job {
+  font-size: 13px;
+}

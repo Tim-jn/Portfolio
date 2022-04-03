@@ -1,4 +1,5 @@
-import ContactBtn from "./ContactBtn";
+import ContactBtn from '../ContactBtn/ContactBtn'
+import './Title.scss'
 
 export default function Title() {
   return (
@@ -20,7 +21,7 @@ export default function Title() {
         <h1 className="main-title-animated">a web developer</h1>
         <h1 className="main-title-animated">a web developer</h1>
       </div>
-      <ContactBtn className="contact-btn"/>
+      <ContactBtn className="contact-btn" />
     </div>
   )
 }
