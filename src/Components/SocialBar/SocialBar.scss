@@ -1,15 +1,16 @@
 @import '../../App.scss';
 
 .social-bar {
-  width: 7%;
-  height: 50px;
+  width: 120px;
+  height: 64px;
+  padding: 6px 14px;
   position: absolute;
   right: 0;
   top: 0;
   background-color: $secondary-bg-color;
   border-bottom-left-radius: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -20,13 +21,13 @@
 
 .social-icons {
   cursor: pointer;
-  height: 28px;
-  width: 21px;
+  height: 30px;
+  width: 23px;
 }
 
 .social-icons:hover {
-  height: 30px;
-  width: 25px;
+  height: 33px;
+  width: 28px;
   transition: all 0.3s ease;
 }
 
