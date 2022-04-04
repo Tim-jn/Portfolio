@@ -44,3 +44,12 @@
 .contact-btn:hover a {
   color: $primary-bg-color;
 }
+
+// tablet
+
+@media screen and (max-width: 992px) {
+  .contact-btn {
+    padding: 10px 25px;
+    top: 32%;
+  }
+}

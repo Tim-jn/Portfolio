@@ -22,14 +22,14 @@
   position: absolute;
   top: 0%;
   left: 0%;
-  font-size: $h1-size;
+  font-size: $h1-desktop-size;
   color: $primary-bg-color;
   -webkit-text-stroke: 2px $third-font-color;
 }
 
 .main-title-animated {
   color: #fff;
-  font-size: $h1-size;
+  font-size: $h1-desktop-size;
   position: absolute;
   top: 19%;
   left: 0%;
@@ -73,5 +73,23 @@
       100% 100%,
       0% 100%
     );
+  }
+}
+
+// tablet
+
+@media screen and (max-width: 992px) {
+  .main-title {
+    top: 30%;
+    left: 20%;
+  }
+
+  .main-title-content {
+    font-size: $h1-tablet-size;
+  }
+
+  .main-title-animated {
+    font-size: $h1-tablet-size;
+    top: 16.8%;
   }
 }

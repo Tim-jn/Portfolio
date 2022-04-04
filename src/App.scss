@@ -19,7 +19,8 @@ $third-font-color: aquamarine;
 
 // Fonts sizes
 
-$h1-size: 76px;
+$h1-desktop-size: 76px;
+$h1-tablet-size: 64px;
 $h2-size: 44px;
 $h3-size: 22px;
 $p-size: 18px;
@@ -72,5 +73,13 @@ body {
 @media screen and (max-width: 1200px) {
   .home {
     background-size: 1200px 467px;
+  }
+}
+
+// tablet
+
+@media screen and (max-width: 992px) {
+  .home {
+    background-size: 992px 386px;
   }
 }
