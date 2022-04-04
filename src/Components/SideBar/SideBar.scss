@@ -180,8 +180,24 @@
   font-size: 13px;
 }
 
-// large screen mobile
+// normal screen mobile
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 560px) {
+  .sidebar {
+    width: 52px;
+    padding: 6px 14px;
+  }
 
+  .sidebar-active {
+    width: 240px;
+  }
+
+  .sidebar ul li a .icons {
+    width: 20px;
+  }
+
+  .sidebar .btn {
+    width: 16px;
+  }
+  
 }

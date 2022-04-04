@@ -13,6 +13,7 @@
   top: 38%;
   overflow: hidden;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .contact-btn:hover {
@@ -61,5 +62,15 @@
     padding: 8px 20px;
     font-size: 16px;
     top: 28%;
+  }
+}
+
+// normal screen mobile
+
+@media screen and (max-width: 560px) {
+  .contact-btn {
+    padding: 5px 15px;
+    font-size: 12px;
+    top: 20%;
   }
 }

@@ -93,3 +93,11 @@ body {
     background-size: 768px 299px;
   }
 }
+
+// normal screen mobile
+
+@media screen and (max-width: 560px) {
+  .home {
+    background-size: 560px 218px;
+  }
+}

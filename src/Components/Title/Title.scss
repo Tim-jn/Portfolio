@@ -93,6 +93,10 @@
     font-size: $h1-tablet-size;
     top: 16.8%;
   }
+
+  .title-letter:hover {
+    font-size: 60px;
+  }
 }
 
 // large screen mobile
@@ -100,8 +104,7 @@
 @media screen and (max-width: 768px) {
   .main-title {
     top: 32%;
-    left: 22%;
-    height: 100%;
+    left: 20%;
     width: auto;
   }
 
@@ -111,6 +114,40 @@
 
   .main-title-animated {
     font-size: $h1-mobile-size;
-    top: 13.5%;
+    top: 14.5%;
+  }
+
+  .title-letter:hover {
+    font-size: 48px;
+  }
+}
+
+// normal screen mobile
+
+@media screen and (max-width: 560px) {
+  .main-title {
+    left: 25%;
+  }
+
+  .main-title-content {
+    font-size: 32px;
+    -webkit-text-stroke: 1px $third-font-color;
+  }
+
+  .letter-spaced {
+    margin-right: 8px;
+  }
+
+  .main-title-animated {
+    font-size: 32px;
+    top: 9.6%;
+  }
+
+  .main-title-animated:nth-child(1) {
+    -webkit-text-stroke: 1px $third-font-color;
+  }
+
+  .title-letter:hover {
+    font-size: 28px;
   }
 }
