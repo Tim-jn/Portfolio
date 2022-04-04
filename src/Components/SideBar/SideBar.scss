@@ -189,7 +189,7 @@
   }
 
   .sidebar-active {
-    width: 240px;
+    width: 180px;
   }
 
   .sidebar ul li a .icons {
@@ -199,5 +199,25 @@
   .sidebar .btn {
     width: 16px;
   }
+
+  .profile .profile-details img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .profile .profile-details .name {
+    font-size: 13px;
+  }
   
+  .profile .profile-details .job {
+    font-size: 10px;
+  }
+
+  .sidebar-active .link-name {
+    font-size: 14px;
+  }
+
+  .sidebar ul li .tooltip {
+    display: none;
+  }
 }

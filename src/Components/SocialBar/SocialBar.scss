@@ -50,8 +50,23 @@
   }
 }
 
-// large screen mobile
+// normal screen mobile
 
-@media screen and (max-width: 768px) {
-  
+@media screen and (max-width: 560px) {
+  .social-bar {
+    width: 100px;
+    height: 52px;
+    padding: 6px 14px;
+  }
+
+  .social-icons {
+    cursor: pointer;
+    height: 21px;
+    width: 17px;
+  }
+
+  .social-icons:hover {
+    height: 25px;
+    width: 21px;
+  }
 }
