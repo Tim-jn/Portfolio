@@ -1,3 +1,4 @@
+import ChartSkills from './Components/ChartSkills/ChartSkills'
 import './App.scss'
 import SideBar from './Components/SideBar/SideBar'
 import SocialBar from './Components/SocialBar/SocialBar'
@@ -12,7 +13,10 @@ function App() {
         <Title />
       </section>
       <section id="about-me" className="about"></section>
-      <section id="skills" className="skills"></section>
+      <section id="skills" className="skills">
+        <h1 className="skills-title">My skills</h1>
+        <ChartSkills />
+      </section>
       <section id="work" className="work"></section>
       <section id="contact" className="contact"></section>
     </main>

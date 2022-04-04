@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+.recharts-responsive-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width : 30%!important;
+    height : 50%!important;
+}
+
+.recharts-responsive-container path {
+    fill: $third-font-color;
+}
