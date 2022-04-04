@@ -119,14 +119,16 @@
   background: $third-font-color;
 }
 
-.sidebar-active .link-name:hover {
-  color: $third-font-color;
-  transition: all 0.25s ease;
-}
+.sidebar-active a:hover {
+  .link-name {
+    color: $third-font-color;
+    transition: all 0.25s ease;
+  }
 
-.sidebar-active .link-name:hover:after {
-  width: 100%;
-  transition: all 0.25s ease;
+  .link-name::after {
+    width: 100%;
+    transition: all 0.25s ease;
+  }
 }
 
 .sidebar .profile-content {
