@@ -33,6 +33,7 @@
   position: absolute;
   top: 19%;
   left: 0%;
+  white-space: nowrap;
 }
 
 .main-title-animated:nth-child(1) {
@@ -100,6 +101,8 @@
   .main-title {
     top: 32%;
     left: 22%;
+    height: 100%;
+    width: auto;
   }
 
   .main-title-content {
