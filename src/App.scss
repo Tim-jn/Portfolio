@@ -21,6 +21,7 @@ $third-font-color: aquamarine;
 
 $h1-desktop-size: 76px;
 $h1-tablet-size: 64px;
+$h1-mobile-size: 52px;
 $h2-size: 44px;
 $h3-size: 22px;
 $p-size: 18px;
@@ -81,5 +82,13 @@ body {
 @media screen and (max-width: 992px) {
   .home {
     background-size: 992px 386px;
+  }
+}
+
+// large screen mobile
+
+@media screen and (max-width: 768px) {
+  .home {
+    background-size: 768px 299px;
   }
 }

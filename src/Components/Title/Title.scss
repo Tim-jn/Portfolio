@@ -93,3 +93,21 @@
     top: 16.8%;
   }
 }
+
+// large screen mobile
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    top: 32%;
+    left: 22%;
+  }
+
+  .main-title-content {
+    font-size: $h1-mobile-size;
+  }
+
+  .main-title-animated {
+    font-size: $h1-mobile-size;
+    top: 13.5%;
+  }
+}
