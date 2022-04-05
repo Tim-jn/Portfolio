@@ -1,18 +1,24 @@
 @import '../../App.scss';
 
 .recharts-responsive-container {
-    position: absolute;
-    right: 0;
+    position: relative;
+    left: 0;
     top: 50%;
-    transform: translate(-50%,-50%);
-    width : 30%!important;
+    transform: translateY(-50%);
+    width : 100%!important;
     height : 50%!important;
 }
 
 .recharts-responsive-container path {
     fill: $third-font-color;
+    cursor: pointer;
 }
 
 .recharts-responsive-container text {
     fill: $primary-font-color!important;
+}
+
+.recharts-responsive-container path:hover{
+    fill: $secondary-font-color;
+    transition: all 0.3s;
 }

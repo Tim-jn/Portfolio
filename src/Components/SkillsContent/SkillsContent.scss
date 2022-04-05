@@ -1,0 +1,31 @@
+@import '../../App.scss';
+
+.skills-content {
+   display: flex;
+   flex-direction: row;
+   height: 100%;
+   width: 100%;
+}
+
+.skills-title {
+    font-size: $h2-size;
+    color: $primary-font-color;
+    width: 60%;
+    transform: translateY(30%);
+}
+
+.skills-title-letter-capital {
+    text-shadow: $red-shadow;
+    color: $third-font-color;
+}
+
+.skills-title-letter:hover {
+    text-shadow: $red-shadow;
+    color: $third-font-color;
+    transition: all 0.3s;
+}
+
+.chart-skills {
+    width: 40%;
+    height: 100%;
+}
