@@ -7,11 +7,14 @@
    width: 100%;
 }
 
+.skills-text {
+    width: 60%;
+    transform: translateY(30%);
+}
+
 .skills-title {
     font-size: $h2-size;
     color: $primary-font-color;
-    width: 60%;
-    transform: translateY(30%);
 }
 
 .skills-title-letter-capital {
@@ -23,6 +26,15 @@
     text-shadow: $red-shadow;
     color: $third-font-color;
     transition: all 0.3s;
+}
+
+.skills-paragraphs {
+    color: $primary-font-color;
+    width: 80%;
+}
+
+.skills-paragraph {
+    margin-top: 30px;
 }
 
 .chart-skills {
