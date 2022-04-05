@@ -6,6 +6,7 @@ import {
   faAddressCard,
   faFolderOpen,
   faEnvelope,
+  faHome,
 } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import './SideBar.scss'
@@ -27,6 +28,13 @@ export default function SideBar() {
         />
       </div>
       <ul className="nav-list">
+        <li>
+          <a href="#home">
+            <FontAwesomeIcon className="icons" icon={faHome} />
+            <span className="link-name">Home</span>
+          </a>
+          <span className="tooltip">Home</span>
+        </li>
         <li>
           <a href="#about-me">
             <FontAwesomeIcon className="icons" icon={faAddressCard} />

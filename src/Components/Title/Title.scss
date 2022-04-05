@@ -23,8 +23,7 @@
   top: 0%;
   left: 0%;
   font-size: $h1-desktop-size;
-  color: $primary-bg-color;
-  -webkit-text-stroke: 2px $third-font-color;
+  color: $primary-font-color;
 }
 
 .main-title-animated {
@@ -37,8 +36,9 @@
 }
 
 .main-title-animated:nth-child(1) {
-  color: transparent;
+  color: $primary-bg-color;
   -webkit-text-stroke: 2px $third-font-color;
+  opacity: 0.15;
 }
 
 .main-title-animated:nth-child(2) {

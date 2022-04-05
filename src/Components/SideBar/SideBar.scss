@@ -62,8 +62,8 @@
   background: $primary-bg-color;
   border: 2px solid $third-font-color;
   font-weight: bold;
-  color: $secondary-font-color;
-  display: block;
+  color: $primary-font-color;
+  display: blocprimaryk;
   white-space: nowrap;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .sidebar ul li a {
-  color: $secondary-font-color;
+  color: $primary-font-color;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -167,7 +167,7 @@
 
 .profile .profile-details .name-job {
   margin-left: 10px;
-  color: $secondary-font-color;
+  color: $primary-font-color;
 }
 
 .profile .profile-details .name {
