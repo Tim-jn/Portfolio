@@ -1,5 +1,5 @@
 import ContactBtn from '../Button/Button'
-import './Title.scss'
+import './HomeContent.scss'
 
 export default function Title() {
   return (
@@ -31,7 +31,7 @@ export default function Title() {
         <span className="title-letter">e</span>
         <span className="title-letter">r</span>
       </h1>
-      <ContactBtn className="contact-btn" text="Contact me"/>
+      <ContactBtn className="contact-btn" text="Contact me" />
     </div>
   )
 }

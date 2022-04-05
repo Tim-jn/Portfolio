@@ -1,7 +1,8 @@
 @import '../../App.scss';
 
 .main-title {
-  height: 276px;
+  transform: translateY(30%);
+  height: 100%;
 }
 
 .letter-spaced {
@@ -18,7 +19,6 @@
   animation: shake 0.8s;
   font-size: $h1-desktop-size;
   color: $primary-font-color;
-  padding-top: 20%;
 }
 
 @keyframes shake{

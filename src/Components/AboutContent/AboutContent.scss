@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+.about-content {
+    transform: translateY(30%);
+    height: 100%;
+    width: 50%;
+}
+
+.about-title {
+    font-size: $h2-size;
+    color: $primary-font-color;
+}
+
+.about-title-letter-capital {
+    text-shadow: $red-shadow;
+    color: $third-font-color;
+}
+
+.about-title-letter:hover {
+    text-shadow: $red-shadow;
+    color: $third-font-color;
+    transition: all 0.3s;
+}
+
+.about-paragraph {
+    color: $primary-font-color;
+    margin-top: 30px;
+}
