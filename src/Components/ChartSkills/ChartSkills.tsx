@@ -20,6 +20,10 @@ const data = [
   },
   {
     name: 'JavaScript',
+    value: 55,
+  },
+  {
+    name: 'TypeScript',
     value: 50,
   },
   {
@@ -48,7 +52,7 @@ export default function PieChartSkills() {
           left: 50,
           bottom: 5,
         }}
-        barSize={20}
+        barSize={10}
       >
         <YAxis
           type="category"

@@ -12,3 +12,7 @@
 .recharts-responsive-container path {
     fill: $third-font-color;
 }
+
+.recharts-responsive-container text {
+    fill: $primary-font-color!important;
+}

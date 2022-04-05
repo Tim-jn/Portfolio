@@ -27,9 +27,8 @@
 }
 
 .social-icons:hover {
-  height: 33px;
-  width: 28px;
-  transition: all 0.3s ease;
+  transition: all 0.3s;
+  filter: drop-shadow($red-shadow)
 }
 
 .social-text {
@@ -40,14 +39,8 @@
 
 @media screen and (max-width: 992px) {
   .social-icons {
-    cursor: pointer;
     height: 26px;
     width: 21px;
-  }
-
-  .social-icons:hover {
-    height: 30px;
-    width: 25px;
   }
 }
 
@@ -61,13 +54,7 @@
   }
 
   .social-icons {
-    cursor: pointer;
     height: 21px;
     width: 17px;
-  }
-
-  .social-icons:hover {
-    height: 25px;
-    width: 21px;
   }
 }
