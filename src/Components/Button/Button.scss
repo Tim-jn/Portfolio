@@ -10,15 +10,17 @@
   font-size: 18px;
   box-shadow: 5px 5px 8px 5px rgba(12, 12, 14, 0.48);
   position: relative;
-  top: 38%;
+  margin-top: 6%;
   overflow: hidden;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .contact-btn:hover {
-  color: $third-font-color;
+
+  border: none;
   transition: all 0.15s;
+  padding: 14px 29px;
 }
 
 .contact-btn a {
@@ -28,19 +30,39 @@
   color: $primary-font-color;
 }
 
-#slide {
-  width: 100%;
-  height: 100%;
-  left: -200px;
+#slide-right {
+  width: 230%;
+  height: 150%;
+  right: -280px;
+  background: $secondary-font-color;
+  position: absolute;
+  transition: all 0.3s ease-Out;
+  bottom: 0;
+  transform: rotate(30deg);
+  opacity: 0.9;
+}
+
+.contact-btn:hover #slide-right {
+  right: -32px;
+}
+
+#slide-left {
+  width: 200%;
+  height: 150%;
+  left: -280px;
   background: $third-font-color;
   position: absolute;
   transition: all 0.3s ease-Out;
   bottom: 0;
+  transform: rotate(30deg);
+  opacity: 0.9;
 }
 
-.contact-btn:hover #slide {
-  left: 0;
+.contact-btn:hover #slide-left {
+  left: -32px;
 }
+
+
 
 .contact-btn:hover a {
   color: $primary-bg-color;

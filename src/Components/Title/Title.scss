@@ -2,7 +2,6 @@
 
 .main-title {
   height: 276px;
-  transform: translateY(100%);
 }
 
 .letter-spaced {
@@ -16,9 +15,26 @@
 }
 
 .main-title-content {
-  position: relative;
+  animation: shake 0.8s;
   font-size: $h1-desktop-size;
   color: $primary-font-color;
+  padding-top: 20%;
+}
+
+@keyframes shake{
+  0%{
+    transform: translateX(0)
+  }
+  25%{
+    transform: translateX(25px);
+  }
+    
+  50%{
+    transform: translateX(-25px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
 }
 
 // tablet

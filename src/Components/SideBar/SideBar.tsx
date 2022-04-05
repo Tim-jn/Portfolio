@@ -36,25 +36,25 @@ export default function SideBar() {
           <span className="tooltip">Home</span>
         </li>
         <li>
-          <a href="#about-me">
+          <a href="#about">
             <FontAwesomeIcon className="icons" icon={faAddressCard} />
-            <span className="link-name">About me</span>
+            <span className="link-name">About</span>
           </a>
-          <span className="tooltip">About me</span>
+          <span className="tooltip">About</span>
         </li>
         <li>
           <a href="#skills">
             <FontAwesomeIcon className="icons" icon={faLaptopCode} />
-            <span className="link-name">My hard skills</span>
+            <span className="link-name">Skills</span>
           </a>
-          <span className="tooltip">My hard skills</span>
+          <span className="tooltip">Skills</span>
         </li>
         <li>
           <a href="#work">
             <FontAwesomeIcon className="icons" icon={faFolderOpen} />
-            <span className="link-name">My work</span>
+            <span className="link-name">Work</span>
           </a>
-          <span className="tooltip">My work</span>
+          <span className="tooltip">Work</span>
         </li>
         <li>
           <a href="#contact">

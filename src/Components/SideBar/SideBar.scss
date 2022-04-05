@@ -93,13 +93,14 @@
   margin-right: 15%;
 }
 
-.sidebar ul li a .icons:hover {
+.sidebar ul li:hover .icons {
   transition: all 0.2s;
   filter: drop-shadow($red-shadow)
 }
 
 .sidebar-active ul li a .icons {
   text-align: center;
+  filter: drop-shadow($red-shadow)
 }
 
 .sidebar .link-name {
