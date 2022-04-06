@@ -18,53 +18,11 @@
   width: 100%;
 }
 
-.button:hover {
-  border: none;
-  transition: all 0.15s;
-  padding: 14px 29px;
-}
-
 .button a {
   position: relative;
   transition: all 0.3s ease-Out;
   text-decoration: none;
   color: $primary-font-color;
-}
-
-#slide-right {
-  width: 120%;
-  height: 150%;
-  right: -200px;
-  background: $secondary-font-color;
-  position: absolute;
-  transition: all 0.2s ease-Out;
-  bottom: 0;
-  transform: rotate(30deg);
-  opacity: 0.9;
-}
-
-.button:hover #slide-right {
-  right: -50px;
-}
-
-#slide-left {
-  width: 120%;
-  height: 150%;
-  left: -200px;
-  background: $third-font-color;
-  position: absolute;
-  transition: all 0.2s ease-Out;
-  top: 0;
-  transform: rotate(30deg);
-  opacity: 0.9;
-}
-
-.button:hover #slide-left {
-  left: -68px;
-}
-
-.button:hover a {
-  color: $primary-bg-color;
 }
 
 // tablet
