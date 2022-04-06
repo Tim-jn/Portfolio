@@ -9,33 +9,37 @@
     border-radius: 5px;
 }
 
-.work-item:nth-child(2) .slide-work {
-    background: $secondary-font-color;
-}
-
 .work-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% top;
+    transition: all 0.2s ease-Out;
 }
 
 .slide-work {
     width: 100%;
     height: 100%;
-    left: -300px;
-    background: $third-font-color;
     position: absolute;
-    transition: all 0.2s ease-Out;
     top: 0; 
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s ease-Out;
 }  
 
-.work-item:hover .slide-work {
-    left: 0px;
+.work-item:hover {
+
+    .work-image {
+        filter: blur(4px);
+    }
+   
+    .slide-work {
+        opacity: 1;
+        z-index: 2;
+    }
 }
 
 .preview-button {
