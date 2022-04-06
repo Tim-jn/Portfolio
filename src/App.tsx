@@ -5,6 +5,7 @@ import Title from './Components/HomeContent/HomeContent'
 import AboutContent from './Components/AboutContent/AboutContent'
 import SkillsContent from './Components/SkillsContent/SkillsContent'
 import WorkGallery from './Components/WorkGallery/WorkGallery'
+import ContactContent from './Components/ContactContent/ContactContent'
 
 function App() {
   return (
@@ -31,7 +32,11 @@ function App() {
           <WorkGallery />
         </div>
       </section>
-      <section id="contact" className="contact"></section>
+      <section id="contact" className="contact">
+        <div className="contact-section">
+          <ContactContent />
+        </div>
+      </section>
     </main>
   )
 }
