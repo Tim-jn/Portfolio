@@ -4,6 +4,7 @@ import SocialBar from './Components/SocialBar/SocialBar'
 import Title from './Components/HomeContent/HomeContent'
 import AboutContent from './Components/AboutContent/AboutContent'
 import SkillsContent from './Components/SkillsContent/SkillsContent'
+import WorkGallery from './Components/WorkGallery/WorkGallery'
 
 function App() {
   return (
@@ -24,14 +25,12 @@ function App() {
         <div className="skills-section">
           <SkillsContent />
         </div>
-        {/* <h1 className="skills-title">Skills</h1>
-        <div className="skills-text">
-          <p className="skills-paragraph">
-            Visit my LinkedIn profile for more details or just contact me.
-          </p>
-        </div> */}
       </section>
-      <section id="work" className="work"></section>
+      <section id="work" className="work">
+        <div className="work-section">
+          <WorkGallery />
+        </div>
+      </section>
       <section id="contact" className="contact"></section>
     </main>
   )

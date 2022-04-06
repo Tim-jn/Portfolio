@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-.contact-btn {
+.button {
   padding: 12px 27px;
   background: $primary-bg-color;
   border: 2px solid $third-font-color;
@@ -14,16 +14,16 @@
   overflow: hidden;
   cursor: pointer;
   white-space: nowrap;
+  max-width: 160px;
 }
 
-.contact-btn:hover {
-
+.button:hover {
   border: none;
   transition: all 0.15s;
   padding: 14px 29px;
 }
 
-.contact-btn a {
+.button a {
   position: relative;
   transition: all 0.3s ease-Out;
   text-decoration: none;
@@ -42,7 +42,7 @@
   opacity: 0.9;
 }
 
-.contact-btn:hover #slide-right {
+.button:hover #slide-right {
   right: -50px;
 }
 
@@ -58,11 +58,11 @@
   opacity: 0.9;
 }
 
-.contact-btn:hover #slide-left {
+.button:hover #slide-left {
   left: -68px;
 }
 
-.contact-btn:hover a {
+.button:hover a {
   color: $primary-bg-color;
 }
 

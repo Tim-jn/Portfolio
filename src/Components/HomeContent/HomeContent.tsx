@@ -75,7 +75,7 @@ export default function Title() {
           r
         </span>
       </h1>
-      <ContactBtn className="contact-btn" text="Contact me" />
+      <ContactBtn className="button contact-btn" text="Contact me" href="#contact" />
     </div>
   )
 }
