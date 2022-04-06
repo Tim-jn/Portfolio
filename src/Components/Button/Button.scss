@@ -31,38 +31,36 @@
 }
 
 #slide-right {
-  width: 230%;
+  width: 120%;
   height: 150%;
-  right: -280px;
+  right: -200px;
   background: $secondary-font-color;
   position: absolute;
-  transition: all 0.3s ease-Out;
+  transition: all 0.2s ease-Out;
   bottom: 0;
   transform: rotate(30deg);
   opacity: 0.9;
 }
 
 .contact-btn:hover #slide-right {
-  right: -32px;
+  right: -50px;
 }
 
 #slide-left {
-  width: 200%;
+  width: 120%;
   height: 150%;
-  left: -280px;
+  left: -200px;
   background: $third-font-color;
   position: absolute;
-  transition: all 0.3s ease-Out;
-  bottom: 0;
+  transition: all 0.2s ease-Out;
+  top: 0;
   transform: rotate(30deg);
   opacity: 0.9;
 }
 
 .contact-btn:hover #slide-left {
-  left: -32px;
+  left: -68px;
 }
-
-
 
 .contact-btn:hover a {
   color: $primary-bg-color;
