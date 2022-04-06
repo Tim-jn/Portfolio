@@ -41,3 +41,23 @@
     width: 40%;
     height: 100%;
 }
+
+.skills-icons {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.skills-icon {
+    font-size: 48px;
+    color: $primary-font-color;
+}
+
+.skills-icon:hover {
+    transition: all 0.15s;
+    color: $third-font-color;
+    filter: drop-shadow($red-shadow);
+}

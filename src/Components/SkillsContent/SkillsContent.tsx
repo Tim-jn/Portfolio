@@ -1,5 +1,14 @@
 import './SkillsContent.scss'
 import ChartSkills from '../ChartSkills/ChartSkills'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faHtml5,
+  faCss3,
+  faJs,
+  faReact,
+  faSass,
+  faWordpress,
+} from '@fortawesome/free-brands-svg-icons'
 
 export default function SkillsContent() {
   return (
@@ -38,6 +47,14 @@ export default function SkillsContent() {
             consectetur adipisicing elit. Dolor, sed. Iure praesentium suscipit
             id eum amet, corporis expedita error blanditiis.
           </p>
+        </div>
+        <div className="skills-icons">
+          <FontAwesomeIcon className="skills-icon" icon={faHtml5} />
+          <FontAwesomeIcon className="skills-icon" icon={faCss3} />
+          <FontAwesomeIcon className="skills-icon" icon={faJs} />
+          <FontAwesomeIcon className="skills-icon" icon={faReact} />
+          <FontAwesomeIcon className="skills-icon" icon={faSass} />
+          <FontAwesomeIcon className="skills-icon" icon={faWordpress} />
         </div>
       </div>
       <div className="chart-skills">
