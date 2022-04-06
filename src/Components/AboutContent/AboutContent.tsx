@@ -5,10 +5,18 @@ export default function AboutContent() {
     <div className="about-content">
       <h2 className="about-title">
         <span className="about-title-letter-capital">A</span>
-        <span className="about-title-letter">b</span>
-        <span className="about-title-letter">o</span>
-        <span className="about-title-letter">u</span>
-        <span className="about-title-letter">t</span>
+        <span className="title-letter" data-content="b">
+          b
+        </span>
+        <span className="title-letter" data-content="o">
+          o
+        </span>
+        <span className="title-letter" data-content="u">
+          u
+        </span>
+        <span className="title-letter" data-content="t">
+          t
+        </span>
       </h2>
       <div className="about-text">
         <p className="about-paragraph">

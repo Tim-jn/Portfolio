@@ -9,32 +9,9 @@
   margin-right: 15px;
 }
 
-.title-letter:hover {
-  transition: all 0.3s;
-  color: $third-font-color;
-  text-shadow: $red-shadow;
-}
-
 .main-title-content {
-  animation: shake 0.8s;
   font-size: $h1-desktop-size;
   color: $primary-font-color;
-}
-
-@keyframes shake{
-  0%{
-    transform: translateX(0)
-  }
-  25%{
-    transform: translateX(25px);
-  }
-    
-  50%{
-    transform: translateX(-25px);
-  }
-  100%{
-    transform: translateX(0px);
-  }
 }
 
 // tablet

@@ -35,6 +35,50 @@ $secondary-font-fam: 'Roboto', sans-serif;
 
 $red-shadow : 6px 2px 0px $secondary-font-color;
 
+// Shaking titles effect
+
+.title-letter {
+  position: relative;
+  z-index: 1;
+  
+  &:before,
+  &:after {
+      content:attr(data-content);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  
+  &:before {
+      color: $third-font-color;
+      z-index: -1;
+  }
+
+  &:after {
+      color: $secondary-font-color;
+      z-index: -2;
+  }
+  
+  &:hover {
+      &:before {
+          animation: glitchy 0.17s ease 0.17s;
+      }
+      
+      &:after {
+          animation: glitchy 0.17s ease reverse;
+      }
+  }
+}
+
+@keyframes glitchy {
+  0%   {transform: translate(-5px, 5px);}
+  25%  {transform: translate(-5px, -5px);}
+  50%  {transform: translate(5px, 5px);}
+  75%  {transform: translate(5px, -5px);}
+  100%  {transform: translate(-5px, 5px);}
+}
 
 /* 
 

@@ -6,12 +6,22 @@ export default function SkillsContent() {
     <div className="skills-content">
       <div className="skills-text">
         <h2 className="skills-title">
-          <span className="skills-title-letter-capital">S</span>
-          <span className="skills-title-letter">k</span>
-          <span className="skills-title-letter">i</span>
-          <span className="skills-title-letter">l</span>
-          <span className="skills-title-letter">l</span>
-          <span className="skills-title-letter">s</span>
+          <span className="about-title-letter-capital">S</span>
+          <span className="title-letter" data-content="k">
+            k
+          </span>
+          <span className="title-letter" data-content="i">
+            i
+          </span>
+          <span className="title-letter" data-content="l">
+            l
+          </span>
+          <span className="title-letter" data-content="l">
+            l
+          </span>
+          <span className="title-letter" data-content="s">
+            s
+          </span>
         </h2>
         <div className="skills-paragraphs">
           <p className="skills-paragraph">
