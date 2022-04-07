@@ -26,12 +26,12 @@ export default function WorkGallery() {
           <div key={key} className="work-item">
             <div className="slide-work">
               <Button
-                className="button preview-button"
+                className="button work-button"
                 text="Live preview"
                 href={item.live}
               />
               <Button
-                className="button source-button"
+                className="button work-button"
                 text="Source code"
                 href={item.source}
               />

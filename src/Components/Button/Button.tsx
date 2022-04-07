@@ -1,6 +1,6 @@
 import './Button.scss'
 
-export default function Button ({ className, text, href }: Props) {
+export default function Button({ className, text, href }: Props) {
   return (
     <a href={href} className="btn-slice">
       <div className={className} id="top">
