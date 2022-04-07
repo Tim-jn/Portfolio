@@ -69,9 +69,29 @@
     }
 }
 
-.work-text {
+.work-text-content {
     width: 100%;
-    height:200px;
+    height:210px;
     background: $secondary-bg-color;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.work-text-title {
+    color: $third-font-color;
+}
+
+.work-text-description,
+.work-text-languages, 
+.more-infos {
+    color: $primary-font-color;
+    width: 80%;
+    text-align: center;
+}
+
+.more-infos {
+    font-weight: 700;
 }
 
