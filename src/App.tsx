@@ -33,7 +33,9 @@ function App() {
         </div>
       </section>
       <section id="contact" className="contact">
-        <div className="contact-section">{/* <ContactContent /> */}</div>
+        <div className="contact-section">
+          <ContactContent />
+        </div>
       </section>
     </main>
   )
