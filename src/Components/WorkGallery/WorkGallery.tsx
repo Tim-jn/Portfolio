@@ -11,7 +11,7 @@ export default function WorkGallery() {
       name: 'Freelance WordPress project',
       image: Jeanmartth,
       live: 'https://jeanmartth.be',
-      source: "",
+      source: '',
       description:
         'This project is a website for a heating company. It was built to develop my wordpress skills.',
       languages: 'WordPress',
@@ -121,6 +121,17 @@ export default function WorkGallery() {
           </div>
         )
       })}
+      <div className="more-work">
+        <div className="more-work-text">
+          You want to see more work ? Take a look here :
+        </div>
+        <Button
+          className="button more-work-button"
+          href="https://github.com/Tim-jn"
+          text="
+          See more"
+        />
+      </div>
     </div>
   )
 }

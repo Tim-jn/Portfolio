@@ -113,3 +113,15 @@
     font-weight: 700;
 }
 
+.more-work {
+    display: flex;
+    flex-direction: column;
+    color: $primary-font-color;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.more-work-text {
+    margin-bottom: 25px;
+    font-size: $p-size;
+}
