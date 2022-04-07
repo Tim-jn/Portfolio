@@ -11,7 +11,7 @@ export default function WorkGallery() {
       name: 'Freelance WordPress project',
       image: Jeanmartth,
       live: 'https://jeanmartth.be',
-      source: '',
+      source: 'https://jeanmartth.be',
       description:
         'This project is a website for a heating company. It was built to develop my wordpress skills.',
       languages: 'WordPress',

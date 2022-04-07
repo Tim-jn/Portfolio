@@ -26,8 +26,8 @@
 }
 
 .work-item {
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 7%;
+    margin-top: 7%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -48,6 +48,7 @@
     cursor: pointer;
     overflow: hidden; 
     border-radius: 5px;
+    z-index: 2;
 }
 
 .work-image {
@@ -56,6 +57,7 @@
     object-fit: cover;
     object-position: 50% top;
     transition: all 0.3s ease-Out;
+
 }
 
 .slide-work {
@@ -90,11 +92,14 @@
 .work-text-content {
     width: 100%;
     height:210px;
-    background: $secondary-bg-color;
+    background: $primary-bg-color;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: space-evenly;
+    box-shadow: 0px 2px 9px 7px rgba(12, 12, 14, 0.48);
+    opacity: 0.97;
+    border-radius: 5px;
 }
 
 .work-text-title {
@@ -118,7 +123,7 @@
     flex-direction: column;
     color: $primary-font-color;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 7%;
 }
 
 .more-work-text {
