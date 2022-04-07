@@ -1,9 +1,32 @@
 @import '../../App.scss';
 
+.gallery-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(18%);
+}
+
 .work-item {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+.work-item:nth-child(2), .work-item:nth-child(4) {
+    flex-direction: row-reverse;
+}
+
+
+.work-miniature {
     position: relative;
+    min-width: 300px;
+    min-height: 300px;   
     width: 300px;
-    height: 300px;
+    height: 300px;  
     cursor: pointer;
     overflow: hidden; 
     border-radius: 5px;
@@ -35,7 +58,7 @@
     box-shadow: none;
 }
 
-.work-item:hover {
+.work-miniature:hover {
     .work-image {
         filter: blur(2px) invert(75%);
     }
@@ -45,3 +68,10 @@
         z-index: 2;
     }
 }
+
+.work-text {
+    width: 100%;
+    height:200px;
+    background: $secondary-bg-color;
+}
+
