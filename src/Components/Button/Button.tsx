@@ -1,12 +1,15 @@
 import './Button.scss'
 
-export default function ContactBtn({ className, text, href }: Props) {
+export default function Button ({ className, text, href }: Props) {
   return (
-    <button className={className}>
-      <div id="slide-right"></div>
-      <div id="slide-left"></div>
-      <a href={href}>{text}</a>
-    </button>
+    <a href={href} className="btn-slice">
+      <div className={className} id="top">
+        <span>{text}</span>
+      </div>
+      <div className={className} id="bottom">
+        <span>{text}</span>
+      </div>
+    </a>
   )
 }
 

@@ -1,4 +1,4 @@
-import ContactBtn from '../Button/Button'
+import Button from '../Button/Button'
 import './HomeContent.scss'
 
 export default function Title() {
@@ -75,7 +75,11 @@ export default function Title() {
           r
         </span>
       </h1>
-      <ContactBtn className="button contact-btn" text="Contact me" href="#contact" />
+      <Button
+        className="button contact-btn"
+        text="Contact me"
+        href="#contact"
+      />
     </div>
   )
 }

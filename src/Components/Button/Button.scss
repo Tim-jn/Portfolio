@@ -1,28 +1,136 @@
 @import '../../App.scss';
 
-.button {
-  padding: 12px 27px;
-  background: $primary-bg-color;
-  border: 2px solid $third-font-color;
-  color: $third-font-color;
+.btn-slice {
+  padding: 15px 20px;
+  border: 2px solid $secondary-bg-color;
   border-radius: 5px;
-  font-weight: bold;
-  font-size: 18px;
-  box-shadow: 5px 5px 8px 5px rgba(12, 12, 14, 0.48);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
   position: relative;
-  margin-top: 6%;
-  overflow: hidden;
-  cursor: pointer;
-  white-space: nowrap;
-  max-width: 160px;
-  width: 100%;
+  width: 170px;
+  box-shadow: 2px 2px 8px 5px rgba(12, 12, 14, 0.48);
+  
+  -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
 }
 
-.button a {
+.btn-slice #top  {
   position: relative;
-  transition: all 0.3s ease-Out;
-  text-decoration: none;
-  color: $primary-font-color;
+  height: 11px;
+  overflow: hidden;
+  top: 0px;
+  -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+  
+  -webkit-transition-delay:0.35s;     
+  -moz-transition-delay:0.35s; 
+  -ms-transition-delay:0.35s;     
+  -o-transition-delay:0.35s;     
+  transition-delay:0.35s;
+}
+
+.btn-slice #bottom  {
+  position: relative;
+  height: 10px;
+  overflow: hidden;
+  bottom: 0;
+  -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -moz-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+  transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+  
+  -webkit-transition-delay:0.35s;     
+  -moz-transition-delay:0.35s; 
+  -ms-transition-delay:0.35s;     
+  -o-transition-delay:0.35s;     
+  transition-delay:0.35s;
+}
+
+.btn-slice #bottom span {
+  top: -11px;
+  position: absolute;
+  left: 0;
+  font-family: $primary-font-fam;
+}
+
+.btn-slice #top span {
+  font-family: $primary-font-fam;
+}
+
+.btn-slice:hover #top {
+  top: -5px;
+  -webkit-transition-delay:0.35s;     
+  -moz-transition-delay:0.35s; 
+  -ms-transition-delay:0.35s;     
+  -o-transition-delay:0.35s;     
+  transition-delay:0.35s; 
+}
+
+.btn-slice:hover #bottom {
+  bottom: -4px;
+  -webkit-transition-delay:0.35s;     
+  -moz-transition-delay:0.35s; 
+  -ms-transition-delay:0.35s;     
+  -o-transition-delay:0.35s;     
+  transition-delay:0.35s; 
+}
+
+.btn-slice:hover, .btn-slice:focus, .btn-slice:active {
+  margin-left: 10px;
+  border: 2px solid $third-font-color;
+}
+
+.btn-slice:before{
+  content: '';
+  height: 2px;
+  width: 35px;
+  background-color: $third-font-color;
+  position: absolute;
+  margin-top: 9px;
+  right: -25px;
+  
+  -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+}
+
+.btn-slice:hover:before{
+  width: 130%;
 }
 
 // tablet

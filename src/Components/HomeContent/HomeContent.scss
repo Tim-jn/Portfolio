@@ -3,6 +3,8 @@
 .main-title {
   transform: translateY(30%);
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .letter-spaced {
