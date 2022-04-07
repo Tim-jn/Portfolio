@@ -36,7 +36,9 @@ export default function AboutContent() {
           eum amet, corporis expedita error blanditiis.
         </p>
         <p className="about-paragraph">
-          I would love to work together! Send me an email to get in touch.
+          <a href="#contact">
+            I would love to work together! Send me an email to get in touch.
+          </a>
         </p>
       </div>
     </div>

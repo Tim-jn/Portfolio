@@ -22,6 +22,28 @@
 }
 
 .about-paragraph:nth-child(4) {
-    color: $third-font-color!important;
     font-weight: 700;
+    cursor: pointer;
+    position: relative;
 }
+
+.about-paragraph:nth-child(4) a{
+   color: $third-font-color;
+   text-decoration: none;
+}
+
+.about-paragraph:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: $third-font-color;
+    bottom: -5px; 
+    right: 20%;
+    transition: all 0.3s;
+}
+
+.about-paragraph:nth-child(4):hover:after {
+    width: 80%;
+}
+
