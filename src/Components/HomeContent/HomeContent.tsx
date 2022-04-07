@@ -79,6 +79,7 @@ export default function Title() {
         className="button contact-btn"
         text="Contact me"
         href="#contact"
+        target="_self"
       />
     </div>
   )

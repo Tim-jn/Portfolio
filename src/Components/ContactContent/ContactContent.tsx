@@ -8,11 +8,13 @@ export default function ContactContent() {
         className="button"
         text="LinkedIn"
         href="https://www.linkedin.com/in/timjeanmart/"
+        target="_blank"
       />
       <Button
         className="button"
         text="Email"
         href="mailto:tim.jeanmart@hotmail.com"
+        target="_blank"
       />
     </div>
   )

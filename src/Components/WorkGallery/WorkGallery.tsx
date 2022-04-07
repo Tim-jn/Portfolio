@@ -95,11 +95,13 @@ export default function WorkGallery() {
                   className="button work-button"
                   text="Live preview"
                   href={item.live}
+                  target="_blank"
                 />
                 <Button
                   className="button work-button"
                   text="Source code"
                   href={item.source}
+                  target="_blank"
                 />
               </div>
               <img
@@ -128,8 +130,8 @@ export default function WorkGallery() {
         <Button
           className="button more-work-button"
           href="https://github.com/Tim-jn"
-          text="
-          See more"
+          text="See more"
+          target="_blank"
         />
       </div>
     </div>
