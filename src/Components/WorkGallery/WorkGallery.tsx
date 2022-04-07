@@ -11,7 +11,7 @@ export default function WorkGallery() {
       name: 'Freelance WordPress project',
       image: Jeanmartth,
       live: 'https://jeanmartth.be',
-      source: 'https://github.com/Tim-jn/Fylo',
+      source: "",
       description:
         'This project is a website for a heating company. It was built to develop my wordpress skills.',
       languages: 'WordPress',
@@ -26,15 +26,6 @@ export default function WorkGallery() {
       languages: 'React, TypeScript and Sass',
     },
     {
-      name: 'Space Tourism',
-      image: SpaceTourism,
-      live: 'https://timjn-space-tourism.netlify.app/',
-      source: 'https://github.com/Tim-jn/space-tourism',
-      description:
-        'This project is part of the Frontend Mentor challenges. Your challenge is to build out this multi-page space tourism website and get it looking as close to the design as possible.',
-      languages: 'React',
-    },
-    {
       name: 'To Do App',
       image: ToDoApp,
       live: 'https://timjn-todoapp.netlify.app/',
@@ -43,10 +34,58 @@ export default function WorkGallery() {
         'This project is part of the Frontend Mentor challenges. Your challenge is to build out this todo app and get it looking as close to the design as possible.',
       languages: 'React',
     },
+    {
+      name: 'Space Tourism',
+      image: SpaceTourism,
+      live: 'https://timjn-space-tourism.netlify.app/',
+      source: 'https://github.com/Tim-jn/space-tourism',
+      description:
+        'This project is part of the Frontend Mentor challenges. Your challenge is to build out this multi-page space tourism website and get it looking as close to the design as possible.',
+      languages: 'React',
+    },
   ]
 
   return (
     <div className="gallery-content">
+      <h2 className="work-title">
+        <span className="work-title-letter-capital">L</span>
+        <span className="title-letter" data-content="a">
+          a
+        </span>
+        <span className="title-letter" data-content="t">
+          t
+        </span>
+        <span className="title-letter" data-content="e">
+          e
+        </span>
+        <span className="title-letter" data-content="s">
+          s
+        </span>
+        <span className="title-letter letter-spaced" data-content="t">
+          t
+        </span>
+        <span className="title-letter" data-content="P">
+          P
+        </span>
+        <span className="title-letter" data-content="r">
+          r
+        </span>
+        <span className="title-letter" data-content="o">
+          o
+        </span>
+        <span className="title-letter" data-content="j">
+          j
+        </span>
+        <span className="title-letter" data-content="e">
+          e
+        </span>
+        <span className="title-letter" data-content="c">
+          c
+        </span>
+        <span className="title-letter" data-content="t">
+          t
+        </span>
+      </h2>
       {data.map((item, key) => {
         return (
           <div key={key} className="work-item">
