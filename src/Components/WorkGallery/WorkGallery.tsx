@@ -13,7 +13,7 @@ export default function WorkGallery() {
       live: 'https://jeanmartth.be',
       source: 'https://jeanmartth.be',
       description:
-        'This project is a website for a heating company. It was built to develop my wordpress skills.',
+        "This project is a website for a heating company. It was built to develop my wordpress skills. There's no source code for this project",
       languages: 'WordPress',
     },
     {

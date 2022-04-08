@@ -1,8 +1,27 @@
 @import '../../App.scss';
 
 .contact-content {
+    margin-top: 50%;
+    height: 250px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: $secondary-bg-color;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.contact-text {
+    color: $primary-font-color;
+    text-align: center;
+    font-size: $p-size;
+    padding: 0 10%;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    gap: 10%;
     justify-content: center;
-    gap: 50px;
-    margin-top: 500px;
 }
