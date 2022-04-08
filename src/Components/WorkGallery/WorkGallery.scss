@@ -102,7 +102,9 @@
 }
 
 .work-text-title {
-    color: $third-font-color;
+    color: $primary-font-color;
+    border-left: 5px solid $third-font-color;
+    padding-left: 7px;
 }
 
 .work-text-description,
