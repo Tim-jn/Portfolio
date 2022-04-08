@@ -123,7 +123,10 @@ export default function WorkGallery() {
           </div>
         )
       })}
+
       <div className="more-work">
+        <hr />
+        <br />
         <div className="more-work-text">
           You want to see more work ? Take a look here :
         </div>
