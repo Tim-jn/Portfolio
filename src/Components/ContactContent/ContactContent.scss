@@ -1,21 +1,50 @@
 @import '../../App.scss';
 
 .contact-content {
-    margin-top: 50%;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background: $secondary-bg-color;
+    background: $primary-bg-color;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-position-y: 0%;
+    box-shadow: 0px -2px 9px 7px rgba(12, 12, 14, 0.48);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-content::before {
+    content:'';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: $secondary-font-color;
+    top: -80px;
+    left: 0;
+    transform: translateX(-50%) rotate(45deg);
+    opacity: 0.9;
+}
+
+.contact-content::after {
+    content:'';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: $third-font-color;
+    top: -88px;
+    left: 0;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 2;
+    opacity: 0.9;
 }
 
 .contact-text {
     color: $primary-font-color;
     text-align: center;
     font-size: $p-size;
-    padding: 0 10%;
+    padding: 0 15%;
+    z-index: 2;
 }
 
 .contact-buttons {
