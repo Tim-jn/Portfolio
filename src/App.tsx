@@ -40,7 +40,6 @@ function App() {
           y: -20,
         },
         {
-          duration: 1,
           y: 0,
           autoAlpha: 1,
           ease: 'none',
