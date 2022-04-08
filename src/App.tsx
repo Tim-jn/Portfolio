@@ -37,6 +37,9 @@ function App() {
           <ContactContent />
         </div>
       </section>
+      <footer className="footer">
+        Copyright © 2022 - Designed and created by Tim Jeanmart.
+      </footer>
     </main>
   )
 }
