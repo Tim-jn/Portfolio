@@ -6,34 +6,86 @@ import AboutContent from './Components/AboutContent/AboutContent'
 import SkillsContent from './Components/SkillsContent/SkillsContent'
 import WorkGallery from './Components/WorkGallery/WorkGallery'
 import ContactContent from './Components/ContactContent/ContactContent'
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 function App() {
+  const homeRef = useRef(null)
+  const revealRefs = useRef([])
+  revealRefs.current = []
+
+  useEffect(() => {
+    gsap.fromTo(
+      homeRef.current,
+      {
+        autoAlpha: 0,
+        ease: 'none',
+        y: -20,
+      },
+      {
+        autoAlpha: 1,
+        y: 0,
+        delay: 0.5,
+      }
+    )
+
+    revealRefs.current.forEach((el) => {
+      gsap.fromTo(
+        el,
+        {
+          autoAlpha: 0,
+          y: -20,
+        },
+        {
+          duration: 1,
+          y: 0,
+          autoAlpha: 1,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: el,
+            start: 'top center+=100',
+            toggleActions: 'play none none reverse',
+          },
+        }
+      )
+    })
+  }, [])
+
+  const addToRefs = (el: never) => {
+    if (el && !revealRefs.current.includes(el)) {
+      revealRefs.current.push(el)
+    }
+  }
+
   return (
     <main className="App">
       <SideBar />
       <SocialBar />
-      <section id="home" className="home">
+      <section id="home" className="home" ref={homeRef}>
         <div className="home-section">
           <Title />
         </div>
       </section>
       <section id="about" className="about">
-        <div className="about-section">
+        <div className="about-section" ref={addToRefs}>
           <AboutContent />
         </div>
       </section>
       <section id="skills" className="skills">
-        <div className="skills-section">
+        <div className="skills-section" ref={addToRefs}>
           <SkillsContent />
         </div>
       </section>
       <section id="work" className="work">
-        <div className="work-section">
+        <div className="work-section" ref={addToRefs}>
           <WorkGallery />
         </div>
       </section>
       <section id="contact" className="contact">
-        <div className="contact-section">
+        <div className="contact-section" ref={addToRefs}>
           <ContactContent />
         </div>
       </section>
