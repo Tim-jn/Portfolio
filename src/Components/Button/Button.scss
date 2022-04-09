@@ -27,7 +27,7 @@
 
 .btn-slice #top  {
   position: relative;
-  height: 11px;
+  height: 12px;
   overflow: hidden;
   top: 0px;
   -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
@@ -51,9 +51,9 @@
 
 .btn-slice #bottom  {
   position: relative;
-  height: 12px;
+  height: 8px;
   overflow: hidden;
-  bottom: 0;
+  bottom: 1px;
   -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
   -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
   -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
@@ -85,7 +85,7 @@
 }
 
 .btn-slice:hover #top {
-  top: -5px;
+  top: -6px;
   -webkit-transition-delay:0.35s;     
   -moz-transition-delay:0.35s; 
   -ms-transition-delay:0.35s;     
