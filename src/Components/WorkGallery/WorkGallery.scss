@@ -157,17 +157,17 @@ hr {
 }
 
 .work-icons {
-    color: $secondary-font-color;
+    color: $secondary-bg-color;
     position: absolute;
     bottom: -22%;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 20px
 }
 
 .work-icon:nth-child(1) {
     position: absolute;
-    bottom: -25%;
-    color: $third-font-color;
+    bottom: -30%;
 }
 
 .work-item:nth-child(5) .work-icons {
