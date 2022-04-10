@@ -32,6 +32,7 @@
     flex-direction: row;
     align-items: center;
     width: 85%;
+    position: relative;
 }
 
  .work-item:nth-child(3),  .work-item:nth-child(5) {
@@ -103,8 +104,19 @@
 
 .work-text-title {
     color: $primary-font-color;
-    border-left:4px solid $third-font-color;
-    padding-left: 7px;
+}
+
+.work-title-icon {
+    color: $third-font-color;
+}
+
+.work-title-icon:nth-child(1) {
+    margin-right: 8px;
+}
+
+.slash {
+    margin-left: 8px;
+    color: $third-font-color;
 }
 
 .work-text-description,
@@ -142,4 +154,22 @@ hr {
 .more-work-text {
     margin-bottom: 25px;
     font-size: $p-size;
+}
+
+.work-icons {
+    color: $secondary-font-color;
+    position: absolute;
+    bottom: -22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.work-icon:nth-child(1) {
+    position: absolute;
+    bottom: -25%;
+    color: $third-font-color;
+}
+
+.work-item:nth-child(5) .work-icons {
+    display: none;
 }

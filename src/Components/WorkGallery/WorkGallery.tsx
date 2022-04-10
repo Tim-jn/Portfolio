@@ -4,6 +4,13 @@ import Fylo from './work-images/fylo.png'
 import ToDoApp from './work-images/todoapp.png'
 import SpaceTourism from './work-images/spaceTourism.png'
 import Jeanmartth from './work-images/jeanmartth.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faChevronDown,
+  faChevronLeft,
+  faChevronRight,
+  faSlash,
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function WorkGallery() {
   const data = [
@@ -111,7 +118,18 @@ export default function WorkGallery() {
               />
             </div>
             <div className="work-text-content">
-              <h3 className="work-text-title">{item.name}</h3>
+              <h3 className="work-text-title">
+                <FontAwesomeIcon
+                  className="work-title-icon"
+                  icon={faChevronLeft}
+                />
+                {item.name}
+                <span className="slash">/</span>
+                <FontAwesomeIcon
+                  className="work-title-icon"
+                  icon={faChevronRight}
+                />
+              </h3>
               <p className="work-text-description">{item.description}</p>
               <p className="work-text-languages">
                 I used {item.languages} to create this project.
@@ -119,6 +137,10 @@ export default function WorkGallery() {
               <p className="more-infos">
                 Get more infos by hovering the thumbnail.
               </p>
+            </div>
+            <div className="work-icons">
+              <FontAwesomeIcon className="work-icon" icon={faChevronDown} />
+              <FontAwesomeIcon className="work-icon" icon={faChevronDown} />
             </div>
           </div>
         )
