@@ -14,7 +14,7 @@
 }
 
 .skills-title {
-    font-size: $h2-size;
+    font-size: $h2-desktop-size;
     color: $primary-font-color;
 }
 
@@ -67,6 +67,11 @@
 // tablet
 
 @media screen and (max-width: 992px) {
+
+    .skills-title {
+        font-size: $h2-tablet-size;
+    }
+
     .skills-text {
         font-size: $p-tablet-size;
     }

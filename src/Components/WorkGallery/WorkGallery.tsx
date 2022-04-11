@@ -6,7 +6,6 @@ import SpaceTourism from './work-images/spaceTourism.png'
 import Jeanmartth from './work-images/jeanmartth.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faArrowDown,
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
@@ -14,7 +13,7 @@ import {
 export default function WorkGallery() {
   const data = [
     {
-      name: 'Freelance WordPress project',
+      name: 'Freelance project',
       image: Jeanmartth,
       live: 'https://jeanmartth.be',
       description:
@@ -139,9 +138,6 @@ export default function WorkGallery() {
               <p className="more-infos">
                 Get more infos by hovering the thumbnail.
               </p>
-            </div>
-            <div className="work-icons">
-              <FontAwesomeIcon className="work-icon" icon={faArrowDown} />
             </div>
           </div>
         )

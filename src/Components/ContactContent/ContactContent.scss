@@ -53,3 +53,11 @@
     gap: 10%;
     justify-content: center;
 }
+
+// tablet
+
+@media screen and (max-width: 992px) {
+    .contact-text {
+        font-size: $p-tablet-size;
+    }
+}
