@@ -4,6 +4,7 @@
     transform: translateY(30%);
     height: 100%;
     width: 55%;
+    min-width: 540px;
 }
 
 .about-title {
@@ -19,6 +20,7 @@
 .about-paragraph {
     color: $primary-font-color;
     margin-top: 30px;
+    font-size: $p-desktop-size;
 }
 
 .about-paragraph:nth-child(4) {
@@ -47,3 +49,15 @@
     width: 80%;
 }
 
+// tablet
+
+@media screen and (max-width: 992px) {
+    .about-content {
+        width: 85%;
+    }
+
+    .about-paragraph {
+        font-size: $p-tablet-size;
+    }
+}
+  

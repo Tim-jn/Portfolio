@@ -20,11 +20,13 @@ $third-font-color: #08fdd8;
 // Fonts sizes
 
 $h1-desktop-size: 76px;
-$h1-tablet-size: 64px;
-$h1-mobile-size: 52px;
+$h1-tablet-size: 68px;
+$h1-mobile-size: 60px;
 $h2-size: 44px;
 $h3-size: 22px;
-$p-size: 18px;
+$p-desktop-size: 18px;
+$p-tablet-size: 16px;
+
 
 // Fonts families
 
@@ -127,6 +129,8 @@ body {
   max-width: 1200px;
   width: 75%;
   height: 100vh;
+  position: relative;
+  left: 30px;
   margin: auto;
 }
 
@@ -151,6 +155,8 @@ body {
 .about-section {
   max-width: 1200px;
   width: 75%;
+  position: relative;
+  left: 30px;
   height: 100vh;
   margin: auto;
 }
@@ -164,6 +170,8 @@ body {
 .skills-section {
   max-width: 1200px;
   width: 75%;
+  position: relative;
+  left: 30px;
   height: 100vh;
   margin: auto;
 }
@@ -183,6 +191,8 @@ body {
   max-width: 1200px;
   width: 75%;
   height: 100%;
+  position: relative;
+  left: 30px;
   margin: auto;
   margin-bottom: 20%;
 }
@@ -200,16 +210,20 @@ body {
   max-width: 1200px;
   width: 75%;
   height: 100%;
+  position: relative;
+  left: 30px;
   margin: auto;
 }
 
 .footer {
   background: $secondary-bg-color;
   height: 50px;
-  width: 100%;
+  width: calc(100% - 32px);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: 30px;
   color: grey;
   font-size: 15px;
 }
@@ -220,6 +234,10 @@ body {
   .home {
     background-size: 1200px 467px;
   }
+
+  .about:before {
+    background-position-x: -20%;
+  }
 }
 
 // tablet
@@ -228,6 +246,10 @@ body {
   .home {
     background-size: 992px 386px;
   }
+
+  .about:before {
+    background-position-x: 15%;
+    }
 }
 
 // large screen mobile
