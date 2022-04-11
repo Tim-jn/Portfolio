@@ -6,10 +6,9 @@ import SpaceTourism from './work-images/spaceTourism.png'
 import Jeanmartth from './work-images/jeanmartth.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faChevronDown,
+  faArrowDown,
   faChevronLeft,
   faChevronRight,
-  faSlash,
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function WorkGallery() {
@@ -139,8 +138,7 @@ export default function WorkGallery() {
               </p>
             </div>
             <div className="work-icons">
-              <FontAwesomeIcon className="work-icon" icon={faChevronDown} />
-              <FontAwesomeIcon className="work-icon" icon={faChevronDown} />
+              <FontAwesomeIcon className="work-icon" icon={faArrowDown} />
             </div>
           </div>
         )

@@ -161,7 +161,7 @@ hr {
     position: absolute;
     bottom: -22%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: rotate(20deg), translateX(-50%);
     font-size: 20px
 }
 
