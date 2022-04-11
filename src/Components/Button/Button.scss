@@ -132,16 +132,32 @@
   width: 130%;
 }
 
-// tablet
-
-@media screen and (max-width: 992px) {
-
-}
-
 // large screen mobile
 
 @media screen and (max-width: 768px) {
+  .btn-slice {
+    padding: 12px 20px;
+    font-size: 13px;
+    width: 145px;
+  }
 
+  .btn-slice #top  {
+    height: 10.5px;
+  }
+
+
+
+  .btn-slice #bottom span {
+    top: -9.5px;
+  }
+
+  .btn-slice:hover #top {
+    top: -2px;
+  }
+  
+  .btn-slice:hover #bottom {
+    bottom: -2px;
+  }
 }
 
 // normal screen mobile

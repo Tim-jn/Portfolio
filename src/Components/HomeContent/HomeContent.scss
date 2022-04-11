@@ -23,45 +23,16 @@
   .main-title-content {
     font-size: $h1-tablet-size;
   }
-
-  .title-letter:hover {
-    font-size: 60px;
-  }
 }
 
 // large screen mobile
 
 @media screen and (max-width: 768px) {
-  .main-title {
-    top: 32%;
-    left: 20%;
-  }
 
-  .main-title-content {
-    font-size: $h1-mobile-size;
-  }
-
-  .title-letter:hover {
-    font-size: 48px;
-  }
 }
 
 // normal screen mobile
 
 @media screen and (max-width: 560px) {
-  .main-title {
-    left: 25%;
-  }
 
-  .main-title-content {
-    font-size: 32px;
-  }
-
-  .letter-spaced {
-    margin-right: 8px;
-  }
-
-  .title-letter:hover {
-    font-size: 28px;
-  }
 }
