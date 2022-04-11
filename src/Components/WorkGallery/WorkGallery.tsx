@@ -17,7 +17,6 @@ export default function WorkGallery() {
       name: 'Freelance WordPress project',
       image: Jeanmartth,
       live: 'https://jeanmartth.be',
-      source: 'https://jeanmartth.be',
       description:
         "This project is a website for a heating company. It was built to develop my wordpress skills. There's no source code for this project.",
       languages: 'WordPress',
@@ -103,12 +102,16 @@ export default function WorkGallery() {
                   href={item.live}
                   target="_blank"
                 />
-                <Button
-                  className="button work-button"
-                  text="Source code"
-                  href={item.source}
-                  target="_blank"
-                />
+                {item.source ? (
+                  <Button
+                    className="button work-button"
+                    text="Source code"
+                    href={item.source}
+                    target="_blank"
+                  />
+                ) : (
+                  ''
+                )}
               </div>
               <img
                 src={item.image}
