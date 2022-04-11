@@ -1,12 +1,9 @@
 @import '../../App.scss';
 
 .recharts-responsive-container {
-    position: relative;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
     width : 100%!important;
-    height : 50%!important;
+    height : 100%!important;
     max-height: 450px;
 }
 
