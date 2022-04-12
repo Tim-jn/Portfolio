@@ -73,6 +73,10 @@
         min-width: inherit;
         width: 100%;
     }
+    
+    .about-title {
+        font-size: $h2-mobile-size;
+    }
 
     .about-paragraph:nth-child(4)::after {
         display: none;

@@ -21,10 +21,11 @@ $third-font-color: #08fdd8;
 
 $h1-desktop-size: 76px;
 $h1-tablet-size: 68px;
-$h1-mobile-size: 60px;
+$h1-mobile-size: 58px;
 
 $h2-desktop-size: 44px;
 $h2-tablet-size: 40px; 
+$h2-mobile-size: 38px;
 
 $h3-desktop-size: 22px;
 $h3-tablet-size: 18px;
@@ -254,7 +255,7 @@ body {
 
   .about:before {
     background-position-x: 15%;
-    }
+  }
 }
 
 // large screen mobile
@@ -270,6 +271,10 @@ body {
 
   .about-section {
     left: 25px;
+  }
+
+  .about:before {
+    background-position-x: 40%;
   }
 
   .skills-section {
@@ -289,10 +294,4 @@ body {
     left: 52px;
     width: calc(100% - 52px);
   }
-}
-
-// normal screen mobile
-
-@media screen and (max-width: 560px) {
-
 }
