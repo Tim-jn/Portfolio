@@ -89,6 +89,9 @@ export default function WorkGallery() {
         <span className="title-letter" data-content="t">
           t
         </span>
+        <span className="title-letter" data-content="s">
+          s
+        </span>
       </h2>
       {data.map((item, key) => {
         return (
