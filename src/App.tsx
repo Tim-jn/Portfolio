@@ -84,7 +84,7 @@ function App() {
         </div>
       </section>
       <section id="contact" className="contact">
-        <div className="contact-section" ref={addToRefs}>
+        <div className="contact-section">
           <ContactContent />
         </div>
       </section>
