@@ -264,15 +264,35 @@ body {
     background-size: 768px 299px;
   }
 
+  .home-section {
+    left: 25px;
+  }
+
+  .about-section {
+    left: 25px;
+  }
+
+  .skills-section {
+    left: 25px;
+  }
+
+  .work-section {
+    left: 25px;
+  }
+
+  .contact-section {
+    left: 25px;
+  }
+
   .footer {
-    font-size: 13px;
+    font-size: 11px;
+    left: 52px;
+    width: calc(100% - 52px);
   }
 }
 
 // normal screen mobile
 
 @media screen and (max-width: 560px) {
-  .home {
-    background-image: none;
-  }
+
 }

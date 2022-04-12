@@ -61,3 +61,24 @@
         font-size: $p-tablet-size;
     }
 }
+
+// large screen mobile
+
+@media screen and (max-width: 768px) {
+    .contact-content {
+        height: 300px;
+        margin-bottom: 150px;
+    }
+
+    .contact-text {
+        padding: 0 10%;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items:center;
+        height: 110px;
+        max-height: 110px;
+        justify-content: space-between;
+    }
+}
