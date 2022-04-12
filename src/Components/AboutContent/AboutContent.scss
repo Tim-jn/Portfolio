@@ -65,4 +65,18 @@
         font-size: $p-tablet-size;
     }
 }
+
+// large screen mobile
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        min-width: inherit;
+        width: 100%;
+    }
+
+    .about-paragraph:nth-child(4)::after {
+        display: none;
+    }
+}
+  
   

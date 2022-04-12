@@ -88,3 +88,23 @@
         max-height: 380px;
     }
 }
+
+// large screen mobile
+
+@media screen and (max-width: 768px) {
+    .skills-text {
+        width: 100%;
+    }
+
+    .skills-icons {
+        width: 100%;
+    }
+
+    .skills-paragraphs {
+        width: 100%;
+    }
+
+    .chart-skills {
+       display: none;
+    }
+}

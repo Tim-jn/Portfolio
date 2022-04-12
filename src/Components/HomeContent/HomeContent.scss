@@ -28,7 +28,9 @@
 // large screen mobile
 
 @media screen and (max-width: 768px) {
-
+  .main-title-content {
+    font-size: $h1-mobile-size;
+  }
 }
 
 // normal screen mobile

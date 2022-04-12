@@ -20,8 +20,8 @@ $third-font-color: #08fdd8;
 // Fonts sizes
 
 $h1-desktop-size: 76px;
-$h1-tablet-size: 72px;
-$h1-mobile-size: 68px;
+$h1-tablet-size: 68px;
+$h1-mobile-size: 60px;
 
 $h2-desktop-size: 44px;
 $h2-tablet-size: 40px; 
@@ -223,12 +223,12 @@ body {
 .footer {
   background: $secondary-bg-color;
   height: 50px;
-  width: calc(100% - 32px);
+  width: calc(100% - 64px);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 30px;
+  left: 64px;
   color: grey;
   font-size: 15px;
 }
@@ -262,6 +262,10 @@ body {
 @media screen and (max-width: 768px) {
   .home {
     background-size: 768px 299px;
+  }
+
+  .footer {
+    font-size: 13px;
   }
 }
 
