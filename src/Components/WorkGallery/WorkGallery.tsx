@@ -68,26 +68,17 @@ export default function WorkGallery() {
         <span className="title-letter letter-spaced" data-content="t">
           t
         </span>
-        <span className="title-letter" data-content="P">
-          P
-        </span>
-        <span className="title-letter" data-content="r">
-          r
+        <span className="title-letter" data-content="w">
+          w
         </span>
         <span className="title-letter" data-content="o">
           o
         </span>
-        <span className="title-letter" data-content="j">
-          j
+        <span className="title-letter" data-content="r">
+          r
         </span>
-        <span className="title-letter" data-content="e">
-          e
-        </span>
-        <span className="title-letter" data-content="c">
-          c
-        </span>
-        <span className="title-letter" data-content="t">
-          t
+        <span className="title-letter" data-content="k">
+          k
         </span>
         <span className="title-letter" data-content="s">
           s
