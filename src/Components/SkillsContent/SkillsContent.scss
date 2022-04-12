@@ -123,9 +123,17 @@
 
     .skills-paragraphs {
         width: 100%;
+        font-size: $p-mobile-size;
     }
 
     .chart-skills {
        display: none;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .skills-icons {
+        display: none;
     }
 }

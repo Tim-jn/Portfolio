@@ -64,7 +64,7 @@ export default function SkillsContent() {
             </ul>
           </p>
           <p className="skills-paragraph">
-            I have several skills in programming languages such as HTML5, CSS3,
+            I have skills in programming languages such as HTML5, CSS3,
             Sass, JavaScript, TypeScript, React but also more modestly
             WordPress, Redux and Jest.
           </p>

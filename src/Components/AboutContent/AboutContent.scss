@@ -83,6 +83,10 @@
         font-size: $h2-mobile-size;
     }
 
+    .about-paragraph {
+        font-size: $p-mobile-size;
+    }
+
     .about-paragraph:nth-child(5)::after {
         display: none;
     }

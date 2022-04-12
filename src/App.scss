@@ -32,6 +32,7 @@ $h3-tablet-size: 18px;
 
 $p-desktop-size: 18px;
 $p-tablet-size: 16px;
+$p-mobile-size: 14px;
 
 
 // Fonts families
@@ -262,7 +263,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .home {
-    background-size: 768px 299px;
+    background: none;
   }
 
   .home-section {
