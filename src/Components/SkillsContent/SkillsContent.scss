@@ -38,6 +38,19 @@
     margin-top: 30px;
 }
 
+.skills-paragraph a {
+    color: $third-font-color;
+    text-decoration: none;
+}
+
+.skills-paragraph-ul {
+    margin-left: 7%;
+}
+
+.skills-paragraph-li {
+    margin-bottom: 5px;
+}
+
 .chart-skills {
     width: 40%;
     height: 100%;

@@ -24,16 +24,26 @@ export default function AboutContent() {
           and based in Liège, Belgium.
         </p>
         <p className="about-paragraph">
-          Passionate about the world of the web, I had the opportunity to start
-          my training as part of an OpenClassrooms course, and I train today
-          mainly as an autodidact.
+          Passionate about the world of the web, I started my training in an
+          OpenClassrooms course, and I train today mainly as an autodidact. I
+          have a particular interest in clean interfaces and user experience (UX
+          Design).
         </p>
         <p className="about-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          pariatur ex debitis necessitatibus blanditiis repellendus laboriosam
-          fugit, similique adipisci nobis! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Dolor, sed. Iure praesentium suscipit id
-          eum amet, corporis expedita error blanditiis.
+          Traveler, I had the opportunity to visit dozens of countries, and I
+          lived 6 months in Japan in 2021, in Sapporo.
+        </p>
+        <p className="about-paragraph">
+          You can see my resume by clicking on this
+          <a
+            href="https://cvdesignr.com/p/61f0091f46d5e?hl=fr_FR"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {' '}
+            link
+          </a>
+          .
         </p>
         <p className="about-paragraph">
           <a href="#contact">

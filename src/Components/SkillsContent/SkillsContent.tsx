@@ -34,18 +34,59 @@ export default function SkillsContent() {
         </h2>
         <div className="skills-paragraphs">
           <p className="skills-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            pariatur ex debitis necessitatibus blanditiis repellendus laboriosam
-            fugit, similique adipisci nobis! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Dolor, sed. Iure praesentium suscipit
-            id eum amet, corporis expedita error blanditiis.
+            Skills acquired through my OpenClassrooms training:
+            <br />
+            <br />
+            <ul className="skills-paragraph-ul">
+              <li className="skills-paragraph-li">
+                Choose a technical solution adapted to your client and work in
+                Agile mode
+              </li>
+              <li className="skills-paragraph-li">
+                Create websites with HTML and CSS
+              </li>
+              <li className="skills-paragraph-li">
+                Create dynamic web applications with Javascript and React
+              </li>
+              <li className="skills-paragraph-li">
+                Communicate with the back-end of the application using an API
+              </li>
+              <li className="skills-paragraph-li">
+                Implement unit and integration tests and debug code
+              </li>
+              <li className="skills-paragraph-li">
+                Refactor code to make it more modern and optimized.
+              </li>
+              <li className="skills-paragraph-li">
+                Solve technical problems with a programming language and
+                algorithms
+              </li>
+            </ul>
           </p>
           <p className="skills-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            pariatur ex debitis necessitatibus blanditiis repellendus laboriosam
-            fugit, similique adipisci nobis! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Dolor, sed. Iure praesentium suscipit
-            id eum amet, corporis expedita error blanditiis.
+            I have several skills in programming languages such as HTML5, CSS3,
+            Sass, JavaScript, TypeScript, React but also more modestly
+            WordPress, Redux and Jest.
+          </p>
+          <p className="skills-paragraph">
+            You can visit my{' '}
+            <a
+              href="https://www.github.com/tim-jn/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>{' '}
+            or my{' '}
+            <a
+              href="https://www.linkedin.com/in/timjeanmart/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>{' '}
+            profile for more details, but if you have a specific question, feel
+            free to contact me.
           </p>
         </div>
         <div className="skills-icons">
