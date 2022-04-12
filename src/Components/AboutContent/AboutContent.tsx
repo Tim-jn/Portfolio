@@ -25,8 +25,8 @@ export default function AboutContent() {
         </p>
         <p className="about-paragraph">
           Passionate about the world of the web, I had the opportunity to start
-          my training as part of an OpenClassrooms course, and I train today as
-          an autodidact.
+          my training as part of an OpenClassrooms course, and I train today
+          mainly as an autodidact.
         </p>
         <p className="about-paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi

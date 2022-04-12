@@ -1,4 +1,4 @@
-import profilePic from '../../assets/PP-Tim.jpg'
+import profilePic from '../../assets/PP-Tim.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,

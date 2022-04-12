@@ -1,9 +1,9 @@
 import './WorkGallery.scss'
 import Button from '../Button/Button'
-import Fylo from './work-images/fylo.png'
-import ToDoApp from './work-images/todoapp.png'
-import SpaceTourism from './work-images/spaceTourism.png'
-import Jeanmartth from './work-images/jeanmartth.png'
+import Fylo from './work-images/fylo.webp'
+import ToDoApp from './work-images/todoapp.webp'
+import SpaceTourism from './work-images/spaceTourism.webp'
+import Jeanmartth from './work-images/jeanmartth.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronLeft,
