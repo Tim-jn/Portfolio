@@ -9,6 +9,7 @@ import ContactContent from './Components/ContactContent/ContactContent'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useMediaQuery } from 'react-responsive'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -16,6 +17,8 @@ function App() {
   const homeRef = useRef(null)
   const revealRefs = useRef([])
   revealRefs.current = []
+
+  const isLargerScreen = useMediaQuery({ query: '(max-width: 2300px)' })
 
   useEffect(() => {
     gsap.fromTo(
@@ -83,7 +86,11 @@ function App() {
           <WorkGallery />
         </div>
       </section>
-      <section id="contact" className="contact">
+      <section
+        id="contact"
+        className="contact"
+        ref={isLargerScreen ? addToRefs : null}
+      >
         <div className="contact-section">
           <ContactContent />
         </div>

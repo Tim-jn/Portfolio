@@ -33,7 +33,7 @@ export default function SkillsContent() {
           </span>
         </h2>
         <div className="skills-paragraphs">
-          <p className="skills-paragraph">
+          <div className="skills-paragraph">
             Skills acquired through my OpenClassrooms training:
             <br />
             <br />
@@ -62,11 +62,11 @@ export default function SkillsContent() {
                 algorithms
               </li>
             </ul>
-          </p>
+          </div>
           <p className="skills-paragraph">
-            I have skills in programming languages such as HTML5, CSS3,
-            Sass, JavaScript, TypeScript, React but also more modestly
-            WordPress, Redux and Jest.
+            I have skills in programming languages such as HTML5, CSS3, Sass,
+            JavaScript, TypeScript, React but also more modestly WordPress,
+            Redux and Jest.
           </p>
           <p className="skills-paragraph">
             You can visit my{' '}
