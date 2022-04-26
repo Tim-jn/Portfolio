@@ -32,3 +32,11 @@
     font-size: $h1-mobile-size;
   }
 }
+
+// small screen mobile
+
+@media screen and (max-width: 375px) {
+  .main-title-content {
+    font-size: calc($h1-mobile-size - 10px);
+  }
+}

@@ -82,4 +82,8 @@
         max-height: 110px;
         justify-content: space-between;
     }
+
+    .contact-content::before, .contact-content::after {
+        display: none;
+    }
 }

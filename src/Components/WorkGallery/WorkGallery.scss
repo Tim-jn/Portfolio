@@ -233,3 +233,11 @@ hr {
         opacity: 1;
     }
 }
+
+// small screen mobile
+
+@media screen and (max-width: 375px) {
+    .work-title {
+      font-size: calc($h2-mobile-size - 2px);
+    }
+  }
