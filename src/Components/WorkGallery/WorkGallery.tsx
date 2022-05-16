@@ -4,6 +4,7 @@ import Fylo from './work-images/fylo.webp'
 import ToDoApp from './work-images/todoapp.webp'
 import SpaceTourism from './work-images/spaceTourism.webp'
 import Jeanmartth from './work-images/jeanmartth.webp'
+import Shortly from './work-images/shortly.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronLeft,
@@ -12,6 +13,15 @@ import {
 
 export default function WorkGallery() {
   const data = [
+    {
+      name: 'Shortly',
+      image: Shortly,
+      live: 'https://timjn-shortly.netlify.app',
+      source: 'https://github.com/Tim-jn/shortly',
+      description:
+        'This project is part of the Frontend Mentor challenges. Your challenge is to build out this URL shortening API landing page and get it looking as close to the design as possible.',
+      languages: 'React, TypeScript and Sass',
+    },
     {
       name: 'Freelance project',
       image: Jeanmartth,
