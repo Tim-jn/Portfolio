@@ -36,7 +36,7 @@ export default function AboutContent() {
         <p className="about-paragraph">
           You can see my resume by clicking on this
           <a
-            href="https://cvdesignr.com/p/61f0091f46d5e?hl=fr_FR"
+            href="https://cvdesignr.com/p/61f0091f46d5e"
             target="_blank"
             rel="noreferrer"
           >
