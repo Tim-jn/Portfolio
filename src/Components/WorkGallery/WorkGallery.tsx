@@ -5,6 +5,7 @@ import ToDoApp from './work-images/todoapp.webp'
 import SpaceTourism from './work-images/spaceTourism.webp'
 import Jeanmartth from './work-images/jeanmartth.webp'
 import Shortly from './work-images/shortly.webp'
+import Rimarok from './work-images/rimarok.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronLeft,
@@ -13,6 +14,14 @@ import {
 
 export default function WorkGallery() {
   const data = [
+    {
+      name: 'Rimarok.com',
+      image: Rimarok,
+      live: 'https://rimarok.com/',
+      description:
+        'Redesign of the website https://rimarok.com in partnership with Romaric Ruga.',
+      languages: 'React, TypeScript, JAMStack, Bootstrap/SCSS',
+    },
     {
       name: 'Shortly',
       image: Shortly,
@@ -23,7 +32,7 @@ export default function WorkGallery() {
       languages: 'React, TypeScript and Sass',
     },
     {
-      name: 'Freelance project',
+      name: 'Jeanmartth.be',
       image: Jeanmartth,
       live: 'https://jeanmartth.be',
       description:
@@ -38,24 +47,6 @@ export default function WorkGallery() {
       description:
         'This project is part of the Frontend Mentor challenges. Your challenge is to build out this landing page and get it looking as close to the design as possible.',
       languages: 'React, TypeScript and Sass',
-    },
-    {
-      name: 'To Do App',
-      image: ToDoApp,
-      live: 'https://timjn-todoapp.netlify.app/',
-      source: 'https://github.com/Tim-jn/to-do-app',
-      description:
-        'This project is part of the Frontend Mentor challenges. Your challenge is to build out this todo app and get it looking as close to the design as possible.',
-      languages: 'React',
-    },
-    {
-      name: 'Space Tourism',
-      image: SpaceTourism,
-      live: 'https://timjn-space-tourism.netlify.app/',
-      source: 'https://github.com/Tim-jn/space-tourism',
-      description:
-        'This project is part of the Frontend Mentor challenges. Your challenge is to build out this multi-page space tourism website and get it looking as close to the design as possible.',
-      languages: 'React',
     },
   ]
 
