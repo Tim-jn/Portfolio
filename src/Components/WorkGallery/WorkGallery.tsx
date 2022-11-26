@@ -1,8 +1,6 @@
 import './WorkGallery.scss'
 import Button from '../Button/Button'
 import Fylo from './work-images/fylo.webp'
-import ToDoApp from './work-images/todoapp.webp'
-import SpaceTourism from './work-images/spaceTourism.webp'
 import Jeanmartth from './work-images/jeanmartth.webp'
 import Shortly from './work-images/shortly.webp'
 import Rimarok from './work-images/rimarok.webp'
