@@ -1,20 +1,55 @@
 @import '../../App.scss';
 
-.main-title {
+.title-box {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.letter-spaced {
-  margin-right: 15px;
+.title-box-content {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 90px 60px 110px 60px;
+  text-align: center;
+  border: 2px solid $secondary-bg-color;
+  background: $primary-bg-color;
 }
 
-.main-title-content {
-  font-size: $h1-desktop-size;
+.main-title {
+  font-size: calc($h1-desktop-size) - 28px;
+  font-weight: 400;
   color: $primary-font-color;
-  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.border-box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 30px;
+  left: 30px;
+  z-index: -1;
+  border: 2px solid $secondary-font-color;
+}
+
+.title-name {
+  margin-bottom: 10px;
+  text-align: left;
+  letter-spacing: 12px;
+}
+
+.title-text {
+  font-weight: 600;
+  font-size: calc($h1-desktop-size);
+}
+
+.arrow-down {
+  content: url('../../assets/arrow-down.svg');
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
 }
 
 // tablet
