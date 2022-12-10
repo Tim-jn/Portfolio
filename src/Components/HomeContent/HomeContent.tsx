@@ -1,10 +1,10 @@
-import Button from '../Button/Button'
+// import Button from '../Button/Button'
 import './HomeContent.scss'
-import { useMediaQuery } from 'react-responsive'
+// import { useMediaQuery } from 'react-responsive'
 import SocialBar from '../SocialBar/SocialBar'
 
 export default function Title() {
-  const isMobile = useMediaQuery({ query: '(max-width: 634px)' })
+  // const isMobile = useMediaQuery({ query: '(max-width: 634px)' })
 
   return (
     <div className="title-box">
