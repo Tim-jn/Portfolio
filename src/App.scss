@@ -8,14 +8,15 @@
 
 // Backgrounds colors
 
-$primary-bg-color: rgba(28, 29, 33);
-$secondary-bg-color: #121214;
+// $primary-bg-color: rgba(28, 29, 33);
+$primary-bg-color: #f0efef;
+$secondary-bg-color: #2e2e2e;
 
 // Fonts colors
 
-$primary-font-color: #ffffff;
-$secondary-font-color: #FD1056;
-$third-font-color: #08fdd8;
+$primary-font-color: #2e2e2e;
+$secondary-font-color: #838383;
+$third-font-color: #b0925a;
 
 // Fonts sizes
 
@@ -24,7 +25,7 @@ $h1-tablet-size: 68px;
 $h1-mobile-size: 58px;
 
 $h2-desktop-size: 44px;
-$h2-tablet-size: 40px; 
+$h2-tablet-size: 40px;
 $h2-mobile-size: 38px;
 
 $h3-desktop-size: 22px;
@@ -34,60 +35,14 @@ $p-desktop-size: 18px;
 $p-tablet-size: 16px;
 $p-mobile-size: 14px;
 
-
 // Fonts families
 
-$primary-font-fam: 'Libre Franklin', sans-serif;
+$primary-font-fam: 'Lato', sans-serif;
 $secondary-font-fam: 'Roboto', sans-serif;
 
 // Shadow
 
-$red-shadow : 6px 2px 0px $secondary-font-color;
-
-// Shaking titles effect
-
-.title-letter {
-  position: relative;
-  z-index: 1;
-  
-  &:before,
-  &:after {
-      content:attr(data-content);
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-  }
-  
-  &:before {
-      color: $third-font-color;
-      z-index: -1;
-  }
-
-  &:after {
-      color: $secondary-font-color;
-      z-index: -2;
-  }
-  
-  &:hover {
-      &:before {
-          animation: glitchy 0.17s ease 0.17s;
-      }
-      
-      &:after {
-          animation: glitchy 0.17s ease reverse;
-      }
-  }
-}
-
-@keyframes glitchy {
-  0%   {transform: translate(-5px, 5px);}
-  25%  {transform: translate(-5px, -5px);}
-  50%  {transform: translate(5px, 5px);}
-  75%  {transform: translate(5px, -5px);}
-  100%  {transform: translate(-5px, 5px);}
-}
+$red-shadow: 6px 2px 0px $secondary-font-color;
 
 /* 
 
@@ -126,18 +81,12 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position-y: 100%;
-  background-position-x: 100%;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3cpath d='M269.68 587.68C434.48 583.75 560.92 358.49 885.88 353.01 1210.84 347.53 1341.66 175.62 1502.08 173.81' stroke='rgba(8%2c 253%2c 216%2c 1)' stroke-width='5'%3e%3c/path%3e%3cpath d='M813.4 589.1C928.85 546.88 886.18 201.58 1115.49 201.15 1344.8 200.72 1556.61 442.87 1719.67 447.55' stroke='rgba(8%2c 253%2c 216%2c 0.6)' stroke-width='5'%3e%3c/path%3e%3cpath d='M445.62 633.15C594.79 631.56 713.85 475.94 1019.41 469.35 1324.97 462.76 1436.07 217.57 1593.2 211.75' stroke='rgba(8%2c 253%2c 216%2c 0.4)' stroke-width='5'%3e%3c/path%3e%3cpath d='M605.04 617.52C763.81 600.2 862.5 253.83 1129.61 252.91 1396.71 251.99 1516.9 413.47 1654.17 415.31' stroke='rgba(253%2c 16%2c 86%2c 0.6)' stroke-width='5'%3e%3c/path%3e%3cpath d='M585.58 637.04C727.65 634.57 834.69 461.79 1123.77 454.26 1412.86 446.73 1514.67 218.87 1661.97 213.46' stroke='rgba(253%2c 16%2c 86%2c 1)' stroke-width='5'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 .home-section {
-  max-width: 1200px;
-  width: 75%;
+  width: 100%;
   height: 100vh;
   position: relative;
-  left: 30px;
   margin: auto;
 }
 
@@ -147,17 +96,17 @@ body {
   width: 100%;
 }
 
-.about:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("./assets/world.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: 50%;
-  background-position-x: 75%;
-}
+// .about:before {
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background-image: url('./assets/world.svg');
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   background-position-y: 50%;
+//   background-position-x: 75%;
+// }
 
 .about-section {
   max-width: 1200px;
