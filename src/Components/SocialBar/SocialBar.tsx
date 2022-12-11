@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import './SocialBar.scss'
 
 export default function SocialBar() {
@@ -12,7 +12,7 @@ export default function SocialBar() {
         rel="noreferrer"
       >
         <span className="social-text">LinkedIn</span>
-        <FontAwesomeIcon className="social-icons" icon={faLinkedin} />
+        <FontAwesomeIcon className="linkedin social-icons" icon={faLinkedinIn} />
       </a>
       <a
         className="social-icon"

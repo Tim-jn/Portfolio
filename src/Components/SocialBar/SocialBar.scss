@@ -1,18 +1,20 @@
 @import '../../App.scss';
 
 .social-bar {
-  width: 120px;
-  height: 64px;
-  padding: 6px 14px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  background-color: $secondary-bg-color;
+  width: 140px;
+  height: 80px;
+  position: absolute;
+  right: 60px;
+  top: -38px;
   border-bottom-left-radius: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 10;
+}
+
+.linkedin {
+  height: 35px!important;
 }
 
 .social-bar a {
@@ -22,13 +24,17 @@
 
 .social-icons {
   cursor: pointer;
-  height: 30px;
-  width: 23px;
+  height: 37px;
+  width: 32px;
+  background: $primary-bg-color;
+  padding: 8px;
 }
 
 .social-icons:hover {
-  transition: all 0.3s;
-  filter: drop-shadow($red-shadow)
+  transition: all 0.25s;
+  background: $secondary-bg-color;
+  border-radius: 2px;
+  color: $primary-bg-color;
 }
 
 .social-text {

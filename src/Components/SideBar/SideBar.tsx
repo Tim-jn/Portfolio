@@ -1,7 +1,7 @@
 import profilePic from '../../assets/PP-Tim.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faBars,
+  faSignal,
   faLaptopCode,
   faAddressCard,
   faFolderOpen,
@@ -20,41 +20,41 @@ export default function SideBar() {
 
   return (
     <div className={!toggle ? 'sidebar' : 'sidebar sidebar-active'}>
-      <div className="logo-content">
-        <FontAwesomeIcon
-          className="btn icons"
-          icon={faBars}
-          onClick={toggleSidebar}
-        />
-      </div>
-      <ul className="nav-list">
+      <button className="menu" onClick={toggleSidebar}>
+        Menu
+      </button>
+      <div className="close" onClick={toggleSidebar}></div>
+      <button className="home-contact">
+        <a href="#contact">Contact</a>
+      </button>
+      {/* <ul className="nav-list">
         <li>
           <a href="#home">
             <FontAwesomeIcon className="icons" icon={faHome} />
-            <span className="link-name">Home</span>
+            <span className="link-name">Accueil</span>
           </a>
-          <span className="tooltip">Home</span>
+          <span className="tooltip">Accueil</span>
         </li>
         <li>
           <a href="#about">
             <FontAwesomeIcon className="icons" icon={faAddressCard} />
-            <span className="link-name">About</span>
+            <span className="link-name">À propos</span>
           </a>
-          <span className="tooltip">About</span>
+          <span className="tooltip">À propos</span>
         </li>
         <li>
           <a href="#skills">
             <FontAwesomeIcon className="icons" icon={faLaptopCode} />
-            <span className="link-name">Skills</span>
+            <span className="link-name">Compétences</span>
           </a>
-          <span className="tooltip">Skills</span>
+          <span className="tooltip">Compétences</span>
         </li>
         <li>
           <a href="#work">
             <FontAwesomeIcon className="icons" icon={faFolderOpen} />
-            <span className="link-name">Work</span>
+            <span className="link-name">Projets</span>
           </a>
-          <span className="tooltip">Work</span>
+          <span className="tooltip">Projets</span>
         </li>
         <li>
           <a href="#contact">
@@ -66,14 +66,14 @@ export default function SideBar() {
           </a>
           <span className="tooltip">Contact</span>
         </li>
-      </ul>
+      </ul> */}
       <div className="profile-content">
         <div className="profile">
           <div className="profile-details">
             <img src={profilePic} alt="Tim Jeanmart" />
             <div className="name-job">
               <div className="name">Tim Jeanmart</div>
-              <div className="job">Front end developer</div>
+              <div className="job">Développeur Front-End</div>
             </div>
           </div>
         </div>
