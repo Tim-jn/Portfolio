@@ -15,7 +15,7 @@ $secondary-bg-color: #2e2e2e;
 // Fonts colors
 
 $primary-font-color: #2e2e2e;
-$secondary-font-color: #838383;
+$secondary-font-color: #cacaca;
 $third-font-color: #b0925a;
 
 // Fonts sizes
@@ -94,6 +94,7 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
+  background-color: $secondary-font-color;
 }
 
 // .about:before {
