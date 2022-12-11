@@ -1,101 +1,129 @@
 @import '../../App.scss';
 
 .about-content {
-    height: 100%;
-    width: 55%;
-    min-width: 540px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 100%;
+  width: 55%;
+  min-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-title {
-    font-size: $h2-desktop-size;
-    color: $primary-font-color;
+  font-size: $h2-desktop-size;
+  color: $primary-font-color;
+  padding: 0px 15px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .about-title-letter-capital {
-    text-shadow: $red-shadow;
-    color: $third-font-color;
+  text-shadow: $red-shadow;
+  color: $third-font-color;
+}
+
+.about-text {
+  border-left: 2px solid $secondary-bg-color;
+  padding-left: 20px;
+  margin-top: 60px;
+  letter-spacing: 1px;
+  line-height: 29px;
 }
 
 .about-paragraph {
-    color: $primary-font-color;
-    margin-top: 30px;
-    font-size: $p-desktop-size;
+  color: $primary-font-color;
+  margin-top: 30px;
+  font-size: $p-desktop-size;
+}
+
+.about-paragraph:nth-child(1) {
+  margin-top: 0px;
 }
 
 .about-paragraph:nth-child(5) {
-    font-weight: 700;
-    cursor: pointer;
-    position: relative;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
 }
 
-.about-paragraph:nth-child(5) a{
-   color: $third-font-color;
-   text-decoration: none;
+.about-paragraph:nth-child(5) a {
+  color: $third-font-color;
+  text-decoration: none;
 }
 
 .about-paragraph:nth-child(5)::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 0%;
-    background-color: $third-font-color;
-    bottom: -5px; 
-    right: 18%;
-    transition: all 0.3s;
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: $third-font-color;
+  bottom: -5px;
+  right: 18%;
+  transition: all 0.3s;
 }
 
 .about-paragraph a {
-    color: $third-font-color;
-    text-decoration: none;
+  color: $third-font-color;
+  text-decoration: none;
 }
 
 .about-paragraph:nth-child(5):hover:after {
-    width: 82%;
+  width: 82%;
+}
+
+.profile-pic {
+  position: absolute;
+  right: 15%;
+}
+
+.profile-pic img {
+  height: 300px;
+  border-radius: 2px;
+  opacity: 0.9;
 }
 
 // tablet
 
 @media screen and (max-width: 992px) {
-    .about-title {
-        font-size: $h2-tablet-size;
-    }
-    .about-content {
-        width: 85%;
-    }
+  .about-title {
+    font-size: $h2-tablet-size;
+  }
+  .about-content {
+    width: 85%;
+  }
 
-    .about-paragraph {
-        font-size: $p-tablet-size;
-    }
+  .about-paragraph {
+    font-size: $p-tablet-size;
+  }
 }
 
 // large screen mobile
 
 @media screen and (max-width: 768px) {
-    .about-content {
-        min-width: inherit;
-        width: 100%;
-    }
+  .about-content {
+    min-width: inherit;
+    width: 100%;
+  }
 
-    .about-title {
-        font-size: $h2-mobile-size;
-    }
+  .about-title {
+    font-size: $h2-mobile-size;
+  }
 
-    .about-paragraph {
-        font-size: $p-mobile-size;
-    }
+  .about-paragraph {
+    font-size: $p-mobile-size;
+  }
 
-    .about-paragraph:nth-child(5)::after {
-        display: none;
-    }
+  .about-paragraph:nth-child(5)::after {
+    display: none;
+  }
 }
-  
+
 // small screen mobile
 
 @media screen and (max-width: 375px) {
-    .about-title {
-      font-size: calc($h2-mobile-size - 2px);
-    }
+  .about-title {
+    font-size: calc($h2-mobile-size - 2px);
   }
+}
