@@ -1,13 +1,13 @@
 import profilePic from '../../assets/PP-Tim.webp'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faSignal,
-  faLaptopCode,
-  faAddressCard,
-  faFolderOpen,
-  faEnvelope,
-  faHome,
-} from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import {
+//   faSignal,
+//   faLaptopCode,
+//   faAddressCard,
+//   faFolderOpen,
+//   faEnvelope,
+//   faHome,
+// } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import './SideBar.scss'
 
