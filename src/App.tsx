@@ -1,6 +1,5 @@
 import './App.scss'
 import SideBar from './Components/SideBar/SideBar'
-import SocialBar from './Components/SocialBar/SocialBar'
 import Title from './Components/HomeContent/HomeContent'
 import AboutContent from './Components/AboutContent/AboutContent'
 import SkillsContent from './Components/SkillsContent/SkillsContent'
@@ -65,7 +64,6 @@ function App() {
   return (
     <main className="App">
       <SideBar />
-      <SocialBar />
       <section id="home" className="home" ref={homeRef}>
         <div className="home-section">
           <Title />
