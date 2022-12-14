@@ -1,147 +1,162 @@
 @import '../../App.scss';
 
 .skills-content {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-    height: 100%;
-   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .skills-text {
-    width: 60%;
-    font-size: $p-desktop-size;
+  width: 60%;
+  font-size: $p-desktop-size;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  margin-right: 100px;
 }
 
 .skills-title {
-    font-size: $h2-desktop-size;
-    color: $primary-font-color;
+  font-size: $h2-desktop-size;
+  color: $primary-font-color;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: right;
 }
 
 .skills-title-letter-capital {
-    text-shadow: $red-shadow;
-    color: $third-font-color;
+  text-shadow: $red-shadow;
+  color: $third-font-color;
 }
 
 .skills-title-letter:hover {
-    text-shadow: $red-shadow;
-    color: $third-font-color;
-    transition: all 0.3s;
+  text-shadow: $red-shadow;
+  color: $third-font-color;
+  transition: all 0.3s;
 }
 
 .skills-paragraphs {
-    color: $primary-font-color;
-    width: 80%;
+  color: $primary-font-color;
+  border-top: 2px solid $secondary-bg-color;
+  border-left: 2px solid $secondary-bg-color;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  line-height: 29px;
 }
 
+.skills-paragraph:nth-child(1) {
+    margin-top: 0px;
+  }
+
 .skills-paragraph {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .skills-paragraph a {
-    color: $third-font-color;
-    text-decoration: none;
+  color: $third-font-color;
+  text-decoration: none;
 }
 
 .skills-paragraph-ul {
-    margin-left: 7%;
+  margin-left: 7%;
 }
 
 .skills-paragraph-li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .chart-skills {
-    width: 40%;
-    height: 100%;
-    max-height: 450px;
+  width: 40%;
+  height: 100%;
+  max-height: 450px;
 }
 
 .skills-icons {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 60px;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 60px;
 }
 
 .skills-icon {
-    font-size: 48px;
-    color: $primary-font-color;
+  font-size: 48px;
+  color: $primary-font-color;
 }
 
 .skills-icon:hover {
-    transition: all 0.15s;
-    color: $third-font-color;
-    filter: drop-shadow($red-shadow);
+  transition: all 0.15s;
+  color: $third-font-color;
+  filter: drop-shadow($red-shadow);
 }
 
 // tablet
 
 @media screen and (max-width: 992px) {
+  .skills-title {
+    font-size: $h2-tablet-size;
+  }
 
-    .skills-title {
-        font-size: $h2-tablet-size;
-    }
+  .skills-text {
+    font-size: $p-tablet-size;
+  }
 
-    .skills-text {
-        font-size: $p-tablet-size;
-    }
+  .skills-icon {
+    font-size: 38px;
+  }
 
-    .skills-icon {
-        font-size: 38px;
-    }
+  .skills-paragraphs {
+    width: 90%;
+  }
 
-    .skills-paragraphs {
-        width: 90%;
-    }
-
-    .chart-skills {
-        max-height: 380px;
-    }
+  .chart-skills {
+    max-height: 380px;
+  }
 }
 
 // large screen mobile
 
 @media screen and (max-width: 768px) {
-    .skills-text {
-        width: 100%;
-    }
+  .skills-text {
+    width: 100%;
+  }
 
-    .skills-title {
-        font-size: $h2-mobile-size;
-    }
+  .skills-title {
+    font-size: $h2-mobile-size;
+  }
 
-    .skills-icons {
-        width: 100%;
-    }
+  .skills-icons {
+    width: 100%;
+  }
 
-    .skills-icon {
-        font-size: 30px;
-    }
+  .skills-icon {
+    font-size: 30px;
+  }
 
-    .skills-paragraphs {
-        width: 100%;
-        font-size: $p-mobile-size;
-    }
+  .skills-paragraphs {
+    width: 100%;
+    font-size: $p-mobile-size;
+  }
 
-    .chart-skills {
-       display: none;
-    }
+  .chart-skills {
+    display: none;
+  }
 }
 
-
 @media screen and (max-width: 425px) {
-    .skills-icons {
-        display: none;
-    }
+  .skills-icons {
+    display: none;
+  }
 }
 
 // small screen mobile
 
 @media screen and (max-width: 375px) {
-    .skills-title {
-      font-size: calc($h2-mobile-size - 2px);
-    }
+  .skills-title {
+    font-size: calc($h2-mobile-size - 2px);
+  }
 }

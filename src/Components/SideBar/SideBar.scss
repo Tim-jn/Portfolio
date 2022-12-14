@@ -16,12 +16,12 @@
 .home-contact:hover {
   transition: all 0.25s;
   background-color: $third-font-color;
-  color: $primary-bg-color;
+  color: #fff !important;
 }
 
 .home-contact a {
   text-decoration: none;
-  color: $secondary-bg-color;
+  color: inherit;
 }
 
 .sidebar {
@@ -72,8 +72,10 @@
 }
 
 .sidebar-active {
-  width: 240px;
-  border-right: 2px solid $secondary-font-color;
+  transition: all 0.3s ease;
+  width: 220px;
+  background-color: $secondary-bg-color;
+  overflow: hidden;
 }
 
 // .sidebar .btn {
@@ -86,21 +88,20 @@
 //   cursor: pointer;
 // }
 
-// .sidebar ul {
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
+.sidebar ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-// .sidebar ul li {
-//   position: relative;
-//   height: 70px;
-//   width: 100%;
-//   margin: 0 10%;
-//   list-style: none;
-//   cursor: pointer;
-// }
+.sidebar ul li {
+  position: relative;
+  height: 70px;
+  list-style: none;
+  cursor: pointer;
+}
 
 // .sidebar ul li .tooltip {
 //   position: absolute;
@@ -122,9 +123,9 @@
 //   white-space: nowrap;
 // }
 
-.sidebar-active ul li .tooltip {
-  display: none;
-}
+// .sidebar-active ul li .tooltip {
+//   display: none;
+// }
 
 // .sidebar ul li:hover .tooltip {
 //   top: 36%;
@@ -132,14 +133,14 @@
 //   transition: all 0.3s ease;
 // }
 
-// .sidebar ul li a {
-//   color: $primary-font-color;
-//   text-decoration: none;
-//   display: flex;
-//   align-items: center;
-//   font-weight: bold;
-//   white-space: nowrap;
-// }
+.sidebar ul li a {
+  color: $primary-bg-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
 
 // .sidebar ul li a .icons {
 //   height: 50px;
@@ -158,16 +159,21 @@
 //   filter: drop-shadow($red-shadow);
 // }
 
-// .sidebar .link-name {
-//   opacity: 0;
-//   pointer-events: none;
-//   transition: all 0.15s ease;
-// }
+.sidebar .link-name {
+  display: none;
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
 
 .sidebar-active .link-name {
-  opacity: 1;
+  display: flex;
   pointer-events: auto;
   position: relative;
+  border: 2px solid $primary-bg-color;
+  width: 130px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar-active .link-name::after {
@@ -182,8 +188,10 @@
 
 .sidebar-active a:hover {
   .link-name {
-    color: $third-font-color;
+    background-color: $third-font-color;
+    color: $primary-bg-color;
     transition: all 0.25s ease;
+    border: 2px solid $primary-bg-color;
   }
 }
 
@@ -224,21 +232,21 @@
   height: 50px;
   width: 50px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 1px;
 }
 
 .profile .profile-details .name-job {
   margin-left: 10px;
-  color: $primary-font-color;
+  color: $primary-bg-color;
 }
 
 .profile .profile-details .name {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
 }
 
 .profile .profile-details .job {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 // // normal screen mobile

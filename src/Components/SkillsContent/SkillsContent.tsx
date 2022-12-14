@@ -14,30 +14,11 @@ export default function SkillsContent() {
   return (
     <div className="skills-content">
       <div className="skills-text">
-        <h2 className="skills-title">
-          <span className="about-title-letter-capital">S</span>
-          <span className="title-letter" data-content="k">
-            k
-          </span>
-          <span className="title-letter" data-content="i">
-            i
-          </span>
-          <span className="title-letter" data-content="l">
-            l
-          </span>
-          <span className="title-letter" data-content="l">
-            l
-          </span>
-          <span className="title-letter" data-content="s">
-            s
-          </span>
-        </h2>
+        <h2 className="skills-title">Compétences</h2>
         <div className="skills-paragraphs">
           <div className="skills-paragraph">
             Skills acquired through my OpenClassrooms training:
-            <br />
-            <br />
-            <ul className="skills-paragraph-ul">
+            {/* <ul className="skills-paragraph-ul">
               <li className="skills-paragraph-li">
                 Choose a technical solution adapted to your client and work in
                 Agile mode
@@ -61,7 +42,7 @@ export default function SkillsContent() {
                 Solve technical problems with a programming language and
                 algorithms
               </li>
-            </ul>
+            </ul> */}
           </div>
           <p className="skills-paragraph">
             I have skills in programming languages such as HTML5, CSS3, Sass,

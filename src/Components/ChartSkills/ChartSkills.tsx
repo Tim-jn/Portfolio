@@ -47,10 +47,10 @@ export default function PieChartSkills() {
         layout="vertical"
         data={data}
         margin={{
-          top: 5,
+          top: 30,
           right: 30,
           left: 50,
-          bottom: 5,
+          bottom: 30,
         }}
         barSize={10}
       >
