@@ -34,11 +34,6 @@ export default function AboutContent() {
             </a>
             pour voir mon CV.
           </p>
-          <p className="about-paragraph">
-            <a href="#contact">
-              I would love to work together! Send me an email to get in touch.
-            </a>
-          </p>
         </div>
       </>
       <div className="profile-pic">
