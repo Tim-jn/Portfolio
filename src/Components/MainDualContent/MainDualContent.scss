@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-.about-content {
+.dual-content {
   height: 100%;
   width: 55%;
   min-width: 540px;
@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.about-title {
+.content-title {
   font-size: $h2-desktop-size;
   color: $primary-font-color;
   font-weight: 400;
@@ -18,7 +18,7 @@
   text-align: right;
 }
 
-.about-text {
+.content-text {
   border-top: 2px solid $secondary-bg-color;
   border-left: 2px solid $secondary-bg-color;
   padding-left: 20px;
@@ -29,32 +29,31 @@
   position: relative;
 }
 
-.about-paragraph {
+.content-paragraph {
   color: $primary-font-color;
   margin-top: 20px;
   font-size: $p-desktop-size;
 }
 
-.about-paragraph:nth-child(1) {
+.content-paragraph:nth-child(1) {
   margin-top: 0px;
 }
 
-.about-paragraph a {
+.content-paragraph a {
   color: $third-font-color;
   text-decoration: none;
 }
 
-.about-paragraph:nth-child(5):hover:after {
+.content-paragraph:nth-child(5):hover:after {
   width: 82%;
 }
 
-.profile-pic {
+.image-content {
   position: absolute;
-  top: 37%;
   right: 12%;
 }
 
-.profile-pic img {
+.image-content img {
   height: 300px;
   border-radius: 2px;
   opacity: 0.9;
@@ -63,14 +62,14 @@
 // tablet
 
 @media screen and (max-width: 992px) {
-  .about-title {
+  .content-title {
     font-size: $h2-tablet-size;
   }
-  .about-content {
+  .dual-content {
     width: 85%;
   }
 
-  .about-paragraph {
+  .content-paragraph {
     font-size: $p-tablet-size;
   }
 }
@@ -78,20 +77,20 @@
 // large screen mobile
 
 @media screen and (max-width: 768px) {
-  .about-content {
+  .dual-content {
     min-width: inherit;
     width: 100%;
   }
 
-  .about-title {
+  .content-title {
     font-size: $h2-mobile-size;
   }
 
-  .about-paragraph {
+  .content-paragraph {
     font-size: $p-mobile-size;
   }
 
-  .about-paragraph:nth-child(5)::after {
+  .content-paragraph:nth-child(5)::after {
     display: none;
   }
 }
@@ -99,7 +98,7 @@
 // small screen mobile
 
 @media screen and (max-width: 375px) {
-  .about-title {
+  .content-title {
     font-size: calc($h2-mobile-size - 2px);
   }
 }

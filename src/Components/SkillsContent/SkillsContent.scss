@@ -1,19 +1,12 @@
 @import '../../App.scss';
 
 .skills-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   height: 100%;
-  width: 100%;
-}
-
-.skills-text {
-  width: 60%;
-  font-size: $p-desktop-size;
-  padding-left: 20px;
-  letter-spacing: 1px;
-  margin-right: 100px;
+  width: 55%;
+  min-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills-title {
@@ -23,6 +16,14 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   text-align: right;
+}
+
+.skills-text {
+  font-size: $p-desktop-size;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
 }
 
 .skills-title-letter-capital {
@@ -48,11 +49,11 @@
 }
 
 .skills-paragraph:nth-child(1) {
-    margin-top: 0px;
-  }
+  margin-top: 0px;
+}
 
 .skills-paragraph {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .skills-paragraph a {
@@ -75,16 +76,17 @@
 }
 
 .skills-icons {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 50px;
+  padding: 30px 20px;
 }
 
 .skills-icon {
   font-size: 48px;
+  width: 100%;
   color: $primary-font-color;
 }
 
