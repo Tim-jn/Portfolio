@@ -1,4 +1,3 @@
-import profilePic from '../../assets/PP-Tim.webp'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {
 //   faSignal,
