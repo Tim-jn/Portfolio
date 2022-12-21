@@ -138,7 +138,6 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-weight: bold;
   white-space: nowrap;
 }
 
@@ -169,11 +168,15 @@
   display: flex;
   pointer-events: auto;
   position: relative;
-  border: 2px solid $primary-bg-color;
+  border-bottom: 2px solid $primary-bg-color;
   width: 130px;
-  height: 40px;
+  height: 42px;
   justify-content: center;
   align-items: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: calc($p-desktop-size)- 6px;
 }
 
 .sidebar-active .link-name::after {
@@ -203,50 +206,42 @@
 
 .sidebar .profile-content {
   position: absolute;
-  color: #fff;
-  bottom: 20px;
-  left: 10%;
+  color: $secondary-font-color;
+  bottom: 0;
+  left: 20px;
+  width: 100%;
 }
 
-.sidebar .profile-content .profile {
-  position: relative;
+.sidebar .profile-details {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
   padding: 10px 6px;
   height: 60px;
 }
 
-.sidebar .profile .profile-details {
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  white-space: nowrap;
-  transition: all 0.3s ease;
-}
-
-.sidebar-active .profile .profile-details {
+.sidebar-active .profile-details {
   opacity: 1;
   pointer-events: auto;
 }
 
-.profile .profile-details img {
-  height: 50px;
-  width: 50px;
-  object-fit: cover;
-  border-radius: 1px;
-}
-
-.profile .profile-details .name-job {
-  margin-left: 10px;
+.profile-details {
   color: $primary-bg-color;
+  white-space: nowrap;
 }
 
-.profile .profile-details .name {
-  font-size: 17px;
+.profile-details .name {
+  font-size: 11px;
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin-bottom: 5px;
 }
 
-.profile .profile-details .job {
-  font-size: 18px;
+.profile-details .job {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 // // normal screen mobile
@@ -269,18 +264,18 @@
 //     width: 16px;
 //   }
 
-.profile .profile-details img {
-  height: 30px;
-  width: 30px;
-}
+// .profile .profile-details img {
+//   height: 30px;
+//   width: 30px;
+// }
 
-.profile .profile-details .name {
-  font-size: 13px;
-}
+// .profile .profile-details .name {
+//   font-size: 13px;
+// }
 
-.profile .profile-details .job {
-  font-size: 10px;
-}
+// .profile .profile-details .job {
+//   font-size: 10px;
+// }
 
 // .sidebar-active .link-name {
 //   font-size: 14px;

@@ -58,14 +58,9 @@ export default function SideBar() {
         </li>
       </ul>
       <div className="profile-content">
-        <div className="profile">
-          <div className="profile-details">
-            <img src={profilePic} alt="Tim Jeanmart" />
-            <div className="name-job">
-              <div className="name">Tim Jeanmart</div>
-              <div className="job">Développeur Front-End</div>
-            </div>
-          </div>
+        <div className="profile-details">
+          <div className="name">Tim Jeanmart</div>
+          <div className="job">Développeur Front-End</div>
         </div>
       </div>
     </div>
