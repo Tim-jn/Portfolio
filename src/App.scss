@@ -94,20 +94,8 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: $secondary-font-color;
+  background-color: #dadada;
 }
-
-// .about:before {
-//   content: '';
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   background-image: url('./assets/world.svg');
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-//   background-position-y: 50%;
-//   background-position-x: 75%;
-// }
 
 .about-section {
   max-width: 1200px;
