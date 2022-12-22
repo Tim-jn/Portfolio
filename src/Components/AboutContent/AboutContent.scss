@@ -1,63 +1,14 @@
 @import '../../App.scss';
 
-.about-content {
-  height: 100%;
-  width: 55%;
-  min-width: 540px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-title {
-  font-size: $h2-desktop-size;
-  color: $primary-font-color;
-  font-weight: 400;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  text-align: right;
-}
-
-.about-text {
-  border-top: 2px solid $secondary-bg-color;
-  border-left: 2px solid $secondary-bg-color;
-  padding-left: 20px;
-  padding-top: 35px;
-  padding-bottom: 20px;
-  letter-spacing: 1px;
-  line-height: 29px;
-  position: relative;
-}
-
 .about-paragraph {
   color: $primary-font-color;
   margin-top: 20px;
   font-size: $p-desktop-size;
 }
 
-.about-paragraph:nth-child(1) {
-  margin-top: 0px;
-}
-
 .about-paragraph a {
   color: $third-font-color;
   text-decoration: none;
-}
-
-.about-paragraph:nth-child(5):hover:after {
-  width: 82%;
-}
-
-.profile-pic {
-  position: absolute;
-  top: 37%;
-  right: 12%;
-}
-
-.profile-pic img {
-  height: 300px;
-  border-radius: 2px;
-  opacity: 0.9;
 }
 
 // tablet
