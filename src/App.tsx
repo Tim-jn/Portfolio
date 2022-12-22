@@ -84,12 +84,11 @@ function App() {
           <WorkGallery />
         </div>
       </section>
-      <section
-        id="contact"
-        className="contact"
-        ref={isLargerScreen ? addToRefs : null}
-      >
-        <div className="contact-section">
+      <section id="contact" className="contact">
+        <div
+          className="contact-section"
+          ref={isLargerScreen ? addToRefs : null}
+        >
           <ContactContent />
         </div>
       </section>
