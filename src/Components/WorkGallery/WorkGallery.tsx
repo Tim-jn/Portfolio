@@ -50,68 +50,37 @@ export default function WorkGallery() {
 
   return (
     <div className="gallery-content">
-      <h2 className="work-title">
-        <span className="work-title-letter-capital">L</span>
-        <span className="title-letter" data-content="a">
-          a
-        </span>
-        <span className="title-letter" data-content="t">
-          t
-        </span>
-        <span className="title-letter" data-content="e">
-          e
-        </span>
-        <span className="title-letter" data-content="s">
-          s
-        </span>
-        <span className="title-letter letter-spaced" data-content="t">
-          t
-        </span>
-        <span className="title-letter" data-content="w">
-          w
-        </span>
-        <span className="title-letter" data-content="o">
-          o
-        </span>
-        <span className="title-letter" data-content="r">
-          r
-        </span>
-        <span className="title-letter" data-content="k">
-          k
-        </span>
-        <span className="title-letter" data-content="s">
-          s
-        </span>
-      </h2>
-      {data.map((item, key) => {
-        return (
-          <div key={key} className="work-item">
-            <div className="work-miniature">
-              <div className="slide-work">
-                <Button
-                  className="button work-button"
-                  text="Live preview"
-                  href={item.live}
-                  target="_blank"
-                />
-                {item.source ? (
+      <h2 className="work-title">Projets récents</h2>
+      <div className="work-content">
+        {data.map((item, key) => {
+          return (
+            <div key={key} className={`work-item-${key + 1}`}>
+              <div className="work-miniature">
+                <div className="slide-work">
                   <Button
                     className="button work-button"
-                    text="Source code"
-                    href={item.source}
+                    text="Live preview"
+                    href={item.live}
                     target="_blank"
                   />
-                ) : (
-                  ''
-                )}
+                  {item.source ? (
+                    <Button
+                      className="button work-button"
+                      text="Source code"
+                      href={item.source}
+                      target="_blank"
+                    />
+                  ) : (
+                    ''
+                  )}
+                </div>
+                  {/* <img
+                    src={item.image}
+                    alt={item.name + ' project'}
+                    className="work-image"
+                  /> */}
               </div>
-              <img
-                src={item.image}
-                alt={item.name + ' project'}
-                className="work-image"
-              />
-            </div>
-            <div className="work-text-content">
+              {/* <div className="work-text-content">
               <h3 className="work-text-title">
                 <FontAwesomeIcon
                   className="work-title-icon"
@@ -131,21 +100,21 @@ export default function WorkGallery() {
               <p className="more-infos">
                 Get more infos by hovering the thumbnail.
               </p>
+            </div> */}
             </div>
-          </div>
-        )
-      })}
-
+          )
+        })}
+      </div>
       <div className="more-work">
         <hr />
         <br />
         <div className="more-work-text">
-          You want to see more work ? Take a look here :
+          Vous voulez voir plus de projets ? Cliquez sur le lien ci-dessous !
         </div>
         <Button
           className="button more-work-button"
           href="https://github.com/Tim-jn"
-          text="See more"
+          text="Voir plus"
           target="_blank"
         />
       </div>

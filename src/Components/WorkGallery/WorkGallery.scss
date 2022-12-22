@@ -1,243 +1,256 @@
 @import '../../App.scss';
 
 .gallery-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  min-width: 540px;
 }
 
 .work-title {
-    font-size: $h2-desktop-size;
-    color: $primary-font-color;
-    align-self: flex-start;
-    margin-top: 10%;
-    margin-bottom: 5%;
+  font-size: $h2-desktop-size;
+  color: $primary-font-color;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: right;
 }
 
-.work-title-letter-capital {
-    text-shadow: $red-shadow;
-    color: $third-font-color;
+.work-content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 700px;
+  justify-content: center;
+  gap: 20px;
 }
 
-.work-title-letter:hover {
-    text-shadow: $red-shadow;
-    color: $third-font-color;
-    transition: all 0.3s;
+.work-item-1 > * {
+  width: 300px;
+  height: 250px;
+  max-width: 300px;
+  max-height: 250px;
 }
 
-.work-item {
-    margin-bottom: 5%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    max-width: 1080px;
-    position: relative;
+.work-item-2 > * {
+  width: 300px;
+  height: 350px;
+  max-width: 300px;
+  max-height: 350px;
 }
 
- .work-item:nth-child(3),  .work-item:nth-child(5) {
-    flex-direction: row-reverse;
+.work-item-3 > * {
+  width: 300px;
+  height: 350px;
+  max-width: 300px;
+  max-height: 350px;
+  margin-top: -100px;
 }
 
+.work-item-4 > * {
+  width: 300px;
+  height: 250px;
+  max-width: 300px;
+  max-height: 250px;
+}
 
 .work-miniature {
-    position: relative;
-    min-width: 300px;
-    min-height: 300px;   
-    width: 300px;
-    height: 300px;  
-    cursor: pointer;
-    overflow: hidden; 
-    border-radius: 5px;
-    z-index: 2;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+  background-color: $secondary-bg-color;
 }
 
 .work-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% top;
-    transition: all 0.3s ease-Out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% top;
+  transition: all 0.3s ease-Out;
 }
 
 .slide-work {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0; 
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: all 0.2s ease-Out;
-    padding: 15% 0;
-}  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.2s ease-Out;
+  padding: 15% 0;
+}
 
 .work-button > * {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .work-miniature:hover {
-    .work-image {
-        filter: blur(4px);
-    }
-   
-    .slide-work {
-        opacity: 1;
-        z-index: 2;
-    }
+  .work-image {
+    filter: blur(4px);
+  }
+
+  .slide-work {
+    opacity: 1;
+    z-index: 2;
+  }
 }
 
 .work-text-content {
-    width: 100%;
-    height: 220px;
-    background: $primary-bg-color;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-evenly;
-    box-shadow: 0px 2px 9px 7px rgba(12, 12, 14, 0.48);
-    opacity: 0.97;
-    border-radius: 5px;
+  width: 100%;
+  height: 220px;
+  background: $primary-bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 2px 9px 7px rgba(12, 12, 14, 0.48);
+  opacity: 0.97;
+  border-radius: 5px;
 }
 
 .work-text-title {
-    color: $primary-font-color;
-    font-size: $h3-desktop-size;
+  color: $primary-font-color;
+  font-size: $h3-desktop-size;
 }
 
 .work-title-icon {
-    color: $third-font-color;
-    font-size: $h3-desktop-size;
+  color: $third-font-color;
+  font-size: $h3-desktop-size;
 }
 
 .work-title-icon:nth-child(1) {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .slash {
-    margin-left: 8px;
-    color: $third-font-color;
-    font-size: calc($h3-desktop-size + 2px);
+  margin-left: 8px;
+  color: $third-font-color;
+  font-size: calc($h3-desktop-size + 2px);
 }
 
 .work-text-description,
-.work-text-languages, 
+.work-text-languages,
 .more-infos {
-    color: $primary-font-color;
-    width: 80%;
-    text-align: center;
-    font-size: calc($p-desktop-size - 2px);
+  color: $primary-font-color;
+  width: 80%;
+  text-align: center;
+  font-size: calc($p-desktop-size - 2px);
 }
 
 hr {
-    width: 60%;
-    height: 2px;
-    opacity: 0.5;
-    margin-bottom: 20px;
-    border: none;
-    background: $secondary-bg-color;
-    box-shadow: 0px -5px 10px 30px $primary-bg-color;
+  width: 60%;
+  height: 2px;
+  opacity: 0.5;
+  margin-bottom: 20px;
+  border: none;
+  background: $secondary-bg-color;
+  box-shadow: 0px -5px 10px 30px $primary-bg-color;
 }
 
 .more-infos {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .more-work {
-    display: flex;
-    flex-direction: column;
-    color: $primary-font-color;
-    align-items: center;
-    margin-top: 8%;
-    background: $primary-bg-color;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: $primary-font-color;
+  align-items: center;
+  margin-top: 8%;
+  background: $primary-bg-color;
+  width: 100%;
 }
 
 .more-work-text {
-    margin-bottom: 25px;
-    font-size: $p-desktop-size;
-    text-align: center;
+  margin-bottom: 25px;
+  font-size: $p-desktop-size;
+  text-align: center;
 }
 
 // tablet
 
 @media screen and (max-width: 992px) {
+  .work-title {
+    font-size: $h2-tablet-size;
+  }
 
-    .work-title {
-        font-size: $h2-tablet-size;
-    }
+  .work-text-title {
+    font-size: $h3-tablet-size;
+  }
 
-    .work-text-title {
-        font-size: $h3-tablet-size;
-    }
+  .work-title-icon {
+    font-size: $h3-tablet-size;
+  }
 
-    .work-title-icon {
-        font-size: $h3-tablet-size;
-    }
-    
-    .slash {
-        font-size: calc($h3-tablet-size + 2px);
-    }
+  .slash {
+    font-size: calc($h3-tablet-size + 2px);
+  }
 
-    .work-text-description,
-    .work-text-languages, 
-    .more-infos {
-        font-size: calc($p-tablet-size - 2px);
-    }
+  .work-text-description,
+  .work-text-languages,
+  .more-infos {
+    font-size: calc($p-tablet-size - 2px);
+  }
 
-    .work-text-content {
-        height: 275px;
-    }
+  .work-text-content {
+    height: 275px;
+  }
 
-    .more-work-text {
-        font-size: $p-tablet-size;
-    }
+  .more-work-text {
+    font-size: $p-tablet-size;
+  }
 }
-  
+
 // large screen mobile
 
 @media screen and (max-width: 768px) {
-    .work-item {
-        flex-direction: column;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
+  .work-item {
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 
-    .work-title {
-        margin-bottom: 15%;
-        font-size: $h2-mobile-size;
-    }
-    
-    .work-item:nth-child(3),  .work-item:nth-child(5) {
-        flex-direction: column;
-    }
-    
-    .work-miniature {
-        min-width: 250px;
-        min-height: 250px;   
-        width: 250px;
-        height: 250px;  
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        bottom: -5px;
-    }
+  .work-title {
+    margin-bottom: 15%;
+    font-size: $h2-mobile-size;
+  }
 
-    .work-text-content {
-        width: 100%;
-        max-width: 350px;
-        height: 220px;
-        z-index: 2;
-        opacity: 1;
-    }
+  .work-item:nth-child(3),
+  .work-item:nth-child(5) {
+    flex-direction: column;
+  }
+
+  .work-miniature {
+    min-width: 250px;
+    min-height: 250px;
+    width: 250px;
+    height: 250px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    bottom: -5px;
+  }
+
+  .work-text-content {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    z-index: 2;
+    opacity: 1;
+  }
 }
 
 // small screen mobile
 
 @media screen and (max-width: 375px) {
-    .work-title {
-      font-size: calc($h2-mobile-size - 2px);
-    }
+  .work-title {
+    font-size: calc($h2-mobile-size - 2px);
   }
+}
