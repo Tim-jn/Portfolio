@@ -133,7 +133,7 @@ body {
 
 .work {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
 }
 
@@ -143,12 +143,11 @@ body {
   height: 100%;
   position: relative;
   margin: auto;
-  margin-bottom: 20%;
 }
 
 .contact {
   position: relative;
-  height: 78vh;
+  height: 80vh;
   width: 100%;
   background-color: $secondary-bg-color;
   padding-top: 200px;
@@ -158,22 +157,22 @@ body {
 .contact::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 50.3%;
   height: 100px;
-  top: -100px;
+  top: -65px;
   left: 0px;
-  transform: rotate(176deg);
+  transform: rotate(4deg);
   background-color: $primary-bg-color;
 }
 
 .contact::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 50.3%;
   height: 100px;
-  top: -100px;
+  top: -65px;
   right: 0px;
-  transform: rotate(4deg);
+  transform: rotate(176deg);
   background-color: $primary-bg-color;
 }
 
