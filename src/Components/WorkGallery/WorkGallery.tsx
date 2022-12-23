@@ -56,7 +56,7 @@ export default function WorkGallery() {
           return (
             <div key={key} className={`work-item-${key + 1}`}>
               <div className="work-miniature">
-                <div className="slide-work">
+                {/* <div className="slide-work">
                   <Button
                     className="button work-button"
                     text="Live preview"
@@ -73,8 +73,10 @@ export default function WorkGallery() {
                   ) : (
                     ''
                   )}
-                </div>
-                  {/* <img
+                </div> */}
+                <p className="site-name">{item.name}</p>
+                <p className="more-info">Plus d'infos</p>
+                {/* <img
                     src={item.image}
                     alt={item.name + ' project'}
                     className="work-image"
@@ -111,12 +113,16 @@ export default function WorkGallery() {
         <div className="more-work-text">
           Vous voulez voir plus de projets ? Cliquez sur le lien ci-dessous !
         </div>
-        <Button
-          className="button more-work-button"
-          href="https://github.com/Tim-jn"
-          text="Voir plus"
-          target="_blank"
-        />
+        <button className="see-more">
+          <a
+            href="https://github.com/Tim-jn"
+            target="_blank"
+            className="see-more-link"
+            rel="noreferrer"
+          >
+            Voir plus
+          </a>
+        </button>
       </div>
     </div>
   )

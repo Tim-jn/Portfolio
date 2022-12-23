@@ -17,16 +17,23 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   text-align: right;
+  margin-bottom: 60px;
 }
 
 .work-content {
-  margin-top: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 700px;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+}
+
+.work-item-1,
+.work-item-2,
+.work-item-3,
+.work-item-4 {
+  position: relative;
 }
 
 .work-item-1 > * {
@@ -36,11 +43,29 @@
   max-height: 250px;
 }
 
+.work-item-1::before {
+  content: url('../../assets/code.svg');
+  top: 20%;
+  left: 15%;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
 .work-item-2 > * {
   width: 300px;
   height: 350px;
   max-width: 300px;
   max-height: 350px;
+}
+
+.work-item-2::before {
+  content: url('../../assets/shortly.svg');
+  top: 18%;
+  left: 7%;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
 }
 
 .work-item-3 > * {
@@ -51,6 +76,15 @@
   margin-top: -100px;
 }
 
+.work-item-3::before {
+  content: url('../../assets/engineer.svg');
+  top: 0;
+  left: 8%;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
 .work-item-4 > * {
   width: 300px;
   height: 250px;
@@ -58,12 +92,44 @@
   max-height: 250px;
 }
 
+.work-item-4::before {
+  content: url('../../assets/fylo.svg');
+  top: 15%;
+  left: 10%;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
 .work-miniature {
   position: relative;
   cursor: pointer;
   overflow: hidden;
   z-index: 2;
-  background-color: $secondary-bg-color;
+  background-color: $primary-bg-color;
+  border: 2px solid $secondary-bg-color;
+  opacity: 0.95;
+}
+
+.work-miniature::before {
+  content: '';
+  position: absolute;
+  background: $secondary-bg-color;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -300px;
+}
+
+.work-miniature:hover:before {
+  transition: all 0.5s ease;
+  left: 0;
+}
+
+.work-miniature:hover {
+  .more-info {
+    display: block;
+  }
 }
 
 .work-image {
@@ -72,6 +138,44 @@
   object-fit: cover;
   object-position: 50% top;
   transition: all 0.3s ease-Out;
+}
+
+.site-name {
+  position: absolute;
+  color: $secondary-bg-color;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  bottom: 0px;
+  left: 0px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.more-info {
+  display: none;
+  position: absolute;
+  color: $primary-bg-color;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  bottom: 0px;
+  right: 0px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.see-more {
+  margin-top: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+}
+
+.see-more-link {
+  padding: 10px 20px;
+  background-color: $third-font-color;
+  color: $primary-bg-color;
+  text-decoration: none;
+  font-size: $p-desktop-size;
 }
 
 .slide-work {
@@ -148,11 +252,9 @@
 hr {
   width: 60%;
   height: 2px;
-  opacity: 0.5;
   margin-bottom: 20px;
   border: none;
   background: $secondary-bg-color;
-  box-shadow: 0px -5px 10px 30px $primary-bg-color;
 }
 
 .more-infos {
@@ -164,8 +266,7 @@ hr {
   flex-direction: column;
   color: $primary-font-color;
   align-items: center;
-  margin-top: 8%;
-  background: $primary-bg-color;
+  margin-top: 15%;
   width: 100%;
 }
 
