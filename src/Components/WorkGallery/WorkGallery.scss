@@ -178,6 +178,12 @@
   font-size: $p-desktop-size;
 }
 
+.see-more-link:hover {
+  transition: all 0.3s ease;
+  color: $primary-bg-color;
+  background-color: $secondary-bg-color;
+}
+
 .slide-work {
   width: 100%;
   height: 100%;
