@@ -1,14 +1,14 @@
 import './WorkGallery.scss'
-import Button from '../Button/Button'
+// import Button from '../Button/Button'
 import Fylo from './work-images/fylo.webp'
 import Jeanmartth from './work-images/jeanmartth.webp'
 import Shortly from './work-images/shortly.webp'
 import Rimarok from './work-images/rimarok.webp'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faChevronLeft,
-  faChevronRight,
-} from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import {
+//   faChevronLeft,
+//   faChevronRight,
+// } from '@fortawesome/free-solid-svg-icons'
 
 export default function WorkGallery() {
   const data = [
