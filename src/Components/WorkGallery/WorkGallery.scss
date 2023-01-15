@@ -17,7 +17,40 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   text-align: right;
-  margin-bottom: 60px;
+  margin-top: -70px;
+  margin-bottom: 80px;
+}
+
+.work-modal {
+  width: 80%;
+  height: 60%;
+  max-width: 800px;
+  max-height: 700px;
+  background: $secondary-font-color;
+  position: absolute;
+  top: 12%;
+  z-index: 20;
+  transform: translate(50% 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.work-modal img {
+  height: 300px;
+  width: 300px;
+}
+
+.work-modal .close {
+  content: url('../../assets/close.svg');
+  position: absolute;
+  color: $secondary-bg-color;
+  right: 10px;
+  top: 6px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .work-content {
@@ -26,118 +59,91 @@
   flex-wrap: wrap;
   max-width: 700px;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
-.work-item-1,
-.work-item-2,
-.work-item-3,
-.work-item-4 {
-  position: relative;
-}
-
-.work-item-1 > * {
+.work-item {
   width: 300px;
   height: 250px;
-  max-width: 300px;
-  max-height: 250px;
+  background-color: $primary-bg-color;
+  border: 2px solid $secondary-bg-color;
 }
 
-.work-item-1::before {
-  content: url('../../assets/code.svg');
-  top: 20%;
-  left: 15%;
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.work-item-2 > * {
-  width: 300px;
+.work-item-2 {
   height: 350px;
-  max-width: 300px;
-  max-height: 350px;
 }
 
-.work-item-2::before {
-  content: url('../../assets/shortly.svg');
-  top: 18%;
-  left: 7%;
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.work-item-3 > * {
-  width: 300px;
+.work-item-3 {
   height: 350px;
-  max-width: 300px;
-  max-height: 350px;
   margin-top: -100px;
-}
-
-.work-item-3::before {
-  content: url('../../assets/engineer.svg');
-  top: 0;
-  left: 8%;
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.work-item-4 > * {
-  width: 300px;
-  height: 250px;
-  max-width: 300px;
-  max-height: 250px;
-}
-
-.work-item-4::before {
-  content: url('../../assets/fylo.svg');
-  top: 15%;
-  left: 10%;
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
 }
 
 .work-miniature {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  z-index: 2;
-  background-color: $primary-bg-color;
-  border: 2px solid $secondary-bg-color;
-  opacity: 0.95;
+  height: 100%;
+  width: 100%;
 }
 
-.work-miniature::before {
+.work-miniature::after {
   content: '';
   position: absolute;
   background: $secondary-bg-color;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: -300px;
+  top: 350px;
+  left: 0px;
+  z-index: 10;
+  opacity: 0.98;
 }
 
-.work-miniature:hover:before {
+.work-miniature:hover:after {
   transition: all 0.5s ease;
-  left: 0;
+  top: 0px;
 }
 
 .work-miniature:hover {
   .more-info {
-    display: block;
+    transition: all 0.5s ease;
+    left: 22%;
   }
 }
 
+.more-info {
+  position: absolute;
+  color: $primary-bg-color;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  bottom: 45%;
+  left: -85%;
+  font-weight: 600;
+  padding: 0px 10px;
+  z-index: 15;
+  border-left: 5px solid $third-font-color;
+}
+
+.more-info hr {
+  background-color: $third-font-color;
+  margin-top: 5px;
+}
+
 .work-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% top;
-  transition: all 0.3s ease-Out;
+  position: relative;
+}
+
+.work-item-2 .work-image {
+  top: 160px;
+  left: 82px;
+}
+
+.work-item-3 .work-image {
+  left: 37px;
+}
+
+.work-item-4 .work-image {
+  top: 95px;
+  left: 52px;
 }
 
 .site-name {
@@ -147,18 +153,6 @@
   letter-spacing: 2px;
   bottom: 0px;
   left: 0px;
-  font-weight: 500;
-  padding: 5px 10px;
-}
-
-.more-info {
-  display: none;
-  position: absolute;
-  color: $primary-bg-color;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  bottom: 0px;
-  right: 0px;
   font-weight: 500;
   padding: 5px 10px;
 }
@@ -200,17 +194,6 @@
 
 .work-button > * {
   box-shadow: none;
-}
-
-.work-miniature:hover {
-  .work-image {
-    filter: blur(4px);
-  }
-
-  .slide-work {
-    opacity: 1;
-    z-index: 2;
-  }
 }
 
 .work-text-content {
