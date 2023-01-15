@@ -98,6 +98,18 @@ body {
   overflow: hidden;
 }
 
+// .about:before {
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background-image: url('./assets/about-bg.webp');
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   background-position-y: 50%;
+//   background-position-x: 50%;
+// }
+
 .about::after {
   content: '';
   position: absolute;
