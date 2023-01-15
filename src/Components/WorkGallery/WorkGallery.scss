@@ -26,7 +26,7 @@
   height: 60%;
   max-width: 800px;
   max-height: 700px;
-  background: $secondary-font-color;
+  background: $primary-font-color;
   position: absolute;
   top: 12%;
   z-index: 20;
@@ -35,22 +35,56 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.work-modal img {
-  height: 300px;
-  width: 300px;
+  overflow: hidden;
+  border: 7px solid $secondary-bg-color;
 }
 
 .work-modal .close {
   content: url('../../assets/close.svg');
+  background-color: $secondary-bg-color;
   position: absolute;
-  color: $secondary-bg-color;
-  right: 10px;
-  top: 6px;
+  right: 0px;
+  top: 0px;
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+.background-modal {
+  width: 120%;
+  height: 120%;
+  background-repeat: repeat;
+  background-position: 0% -0.2%;
+  position: absolute;
+  top: 35%;
+  left: -5%;
+  background-color: $secondary-bg-color;
+  transform: rotate(-6deg);
+  border: 7px solid $secondary-bg-color;
+}
+
+.text-modal {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: $primary-bg-color;
+  letter-spacing: 3px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-size: $h3-desktop-size;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: $primary-bg-color;
+  width: 70%;
+  letter-spacing: 1px;
+  line-height: 26px;
 }
 
 .work-content {

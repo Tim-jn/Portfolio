@@ -23,7 +23,7 @@ const data = [
     preview: PrevRimarok,
     live: 'https://rimarok.com/',
     description:
-      'Refonte du site web professionel https://rimarok.com en partenariat avec Romaric Ruga, développeur Fullstack freelance',
+      'Refonte du site web professionel https://rimarok.com en partenariat avec Romaric Ruga, développeur Fullstack freelance.',
     languages: 'React, TypeScript, JAMStack, Bootstrap/SCSS',
   },
   {
@@ -70,8 +70,17 @@ export default function WorkGallery() {
 
   const Modal = ({ object }: any) => (
     <div className="work-modal">
-      <img src={object.preview} alt={object.name} />
-      <span className="description">{object.description}</span>
+      <div
+        className="background-modal"
+        style={{
+          backgroundImage: `url(${object.preview})`,
+        }}
+      ></div>
+      <div className="text-modal">
+        <span className="title">{object.name}</span>
+        <span className="description">{object.description}</span>
+      </div>
+
       <div className="close" onClick={() => setShowModal(false)}></div>
     </div>
   )
@@ -87,7 +96,7 @@ export default function WorkGallery() {
                 key={id}
                 className={`work-item work-item-${id} ` + getClass(id)}
                 onClick={() => {
-                  setActive({ id, name, preview, image, description })
+                  setActive({ id, name, preview, description })
                   setShowModal(true)
                 }}
               >
