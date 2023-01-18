@@ -22,6 +22,7 @@ const data = [
     image: Rimarok,
     preview: PrevRimarok,
     live: 'https://rimarok.com/',
+    source: 'https://github.com/Skaant/rimarok',
     description:
       'Refonte du site web professionel https://rimarok.com en partenariat avec Romaric Ruga, développeur Fullstack freelance.',
     languages: 'React, TypeScript, JAMStack, Bootstrap/SCSS',
