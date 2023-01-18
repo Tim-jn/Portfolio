@@ -130,6 +130,11 @@
   transition: all 0.4s ease;
 }
 
+.links-modal a:hover {
+  color: $primary-font-color;
+  transition: all 0.5s;
+}
+
 .work-content {
   display: flex;
   flex-direction: row;

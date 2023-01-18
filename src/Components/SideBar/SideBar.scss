@@ -134,6 +134,11 @@
   transition: all 0.4s ease;
 }
 
+.sidebar-active .link-name:hover {
+  color: $primary-font-color;
+  transition: all 0.2s;
+}
+
 .sidebar .profile-content {
   position: absolute;
   color: $secondary-font-color;
