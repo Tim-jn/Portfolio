@@ -89,7 +89,6 @@
   position: relative;
   height: 70px;
   list-style: none;
-  cursor: pointer;
 }
 
 .sidebar ul li a {
@@ -114,15 +113,25 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: calc($p-desktop-size)- 6px;
+  position: relative;
+  overflow: hidden;
 }
 
-.sidebar-active a:hover {
-  .link-name {
-    background-color: $third-font-color;
-    color: $primary-bg-color;
-    transition: all 0.25s ease;
-    border: 2px solid $primary-bg-color;
-  }
+.sidebar-active .link-name::before {
+  content: '';
+  position: absolute;
+  left: -130px;
+  top: 0;
+  background-color: $third-font-color;
+  height: 42px;
+  width: 130px;
+  z-index: -1;
+  border-radius: 1px;
+}
+
+.sidebar-active .link-name:hover::before {
+  left: 0px;
+  transition: all 0.4s ease;
 }
 
 .sidebar .profile-content {
