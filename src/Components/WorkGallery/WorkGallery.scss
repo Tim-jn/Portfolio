@@ -51,12 +51,12 @@
 }
 
 .background-modal {
-  width: 120%;
-  height: 120%;
+  width: 112%;
+  height: 70%;
   background-repeat: repeat;
-  background-position: 0% -0.2%;
+  background-position: 0% -0.5%;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: -5%;
   background-color: $secondary-bg-color;
   transform: rotate(-6deg);
@@ -78,6 +78,9 @@
   text-transform: uppercase;
   font-size: $h3-desktop-size;
   margin-bottom: 20px;
+  width: 80%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $third-font-color;
 }
 
 .description {
@@ -85,6 +88,46 @@
   width: 70%;
   letter-spacing: 1px;
   line-height: 26px;
+}
+
+.links-modal {
+  margin-top: 10px;
+}
+
+.links-modal a {
+  text-decoration: none;
+  color: $secondary-font-color;
+  margin-top: 18px;
+  margin-left: 20px;
+  display: flex;
+  font-weight: 600;
+  width: 130px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: calc($p-desktop-size)- 6px;
+  position: relative;
+  overflow: hidden;
+  border-left: 2px solid $third-font-color;
+}
+
+.links-modal a::before {
+  content: '';
+  position: absolute;
+  left: -130px;
+  top: 0;
+  background-color: $third-font-color;
+  height: 30px;
+  width: 130px;
+  z-index: -1;
+  border-radius: 1px;
+}
+
+.links-modal a:hover::before {
+  left: 0px;
+  transition: all 0.4s ease;
 }
 
 .work-content {

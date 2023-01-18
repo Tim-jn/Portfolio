@@ -79,6 +79,18 @@ export default function WorkGallery() {
       <div className="text-modal">
         <span className="title">{object.name}</span>
         <span className="description">{object.description}</span>
+        <div className="links-modal">
+          <a href={object.live} target="_blank" rel="noreferrer">
+            Version live
+          </a>
+          {object.source ? (
+            <a href={object.source} target="_blank" rel="noreferrer">
+              Code source
+            </a>
+          ) : (
+            ''
+          )}
+        </div>
       </div>
 
       <div className="close" onClick={() => setShowModal(false)}></div>
@@ -89,14 +101,14 @@ export default function WorkGallery() {
     <div className="gallery-content">
       <h2 className="work-title">Projets récents</h2>
       <div className="work-content">
-        {data.map(({ id, name, preview, image, description }) => {
+        {data.map(({ id, name, preview, image, description, live, source }) => {
           return (
             <>
               <div
                 key={id}
                 className={`work-item work-item-${id} ` + getClass(id)}
                 onClick={() => {
-                  setActive({ id, name, preview, description })
+                  setActive({ id, name, preview, description, live, source })
                   setShowModal(true)
                 }}
               >
