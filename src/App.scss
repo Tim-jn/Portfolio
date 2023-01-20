@@ -111,16 +111,16 @@ body {
   background-position-x: 70%;
 }
 
-.about::after {
-  content: '';
-  position: absolute;
-  height: 100px;
-  width: 110%;
-  background-color: $primary-bg-color;
-  bottom: -45px;
-  left: 0;
-  transform: rotate(177deg);
-}
+// .about::after {
+//   content: '';
+//   position: absolute;
+//   height: 100px;
+//   width: 110%;
+//   background-color: $primary-bg-color;
+//   bottom: -45px;
+//   left: 0;
+//   transform: rotate(177deg);
+// }
 
 .about-section {
   max-width: 1200px;
@@ -128,6 +128,30 @@ body {
   position: relative;
   height: 100vh;
   margin: auto;
+}
+
+// custom shape for about section
+
+.custom-shape-divider-bottom-1674235994 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1674235994 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1674235994 .shape-fill {
+  fill: #f0efef;
 }
 
 .skills {
@@ -181,27 +205,51 @@ body {
   overflow: hidden;
 }
 
-.contact::before {
-  content: '';
+// Custom shape for contact content
+
+.custom-shape-divider-bottom-1674235557 {
   position: absolute;
-  width: 50.3%;
-  height: 100px;
-  top: -65px;
-  left: 0px;
-  transform: rotate(4deg);
-  background-color: $primary-bg-color;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
-.contact::after {
-  content: '';
-  position: absolute;
-  width: 50.3%;
-  height: 100px;
-  top: -65px;
-  right: 0px;
-  transform: rotate(176deg);
-  background-color: $primary-bg-color;
+.custom-shape-divider-bottom-1674235557 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
 }
+
+.custom-shape-divider-bottom-1674235557 .shape-fill {
+  fill: #2e2e2e;
+}
+
+// .contact::before {
+//   content: '';
+//   background: url('./assets/triangle.svg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: absolute;
+//   width: 300%;
+//   height: 150px;
+//   top: 0;
+//   left: 50%;
+//   transform: translate(-11%, -10%);
+// }
+
+// .contact::after {
+//   content: '';
+//   position: absolute;
+//   width: 50.3%;
+//   height: 100px;
+//   top: -65px;
+//   right: 0px;
+//   transform: rotate(176deg);
+//   background-color: $primary-bg-color;
+// }
 
 .contact-section {
   max-width: 1200px;

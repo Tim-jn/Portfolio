@@ -73,6 +73,19 @@ function App() {
         <div className="about-section" ref={addToRefs}>
           <AboutContent />
         </div>
+        <div className="custom-shape-divider-bottom-1674235994">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+              className="shape-fill"
+            ></path>
+          </svg>
+        </div>
       </section>
       <section id="skills" className="skills">
         <div className="skills-section" ref={addToRefs}>
@@ -82,6 +95,19 @@ function App() {
       <section id="work" className="work">
         <div className="work-section" ref={addToRefs}>
           <WorkGallery />
+        </div>
+        <div className="custom-shape-divider-bottom-1674235557">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
+              className="shape-fill"
+            ></path>
+          </svg>
         </div>
       </section>
       <section id="contact" className="contact">
