@@ -24,7 +24,7 @@ export default function AboutContent() {
           pour voir mon CV.
         </p>
       }
-      image={<img src={profilePic} alt="Tim Jeanmart" />}
+      // image={<img src={profilePic} alt="Tim Jeanmart" />}
     />
   )
 }
