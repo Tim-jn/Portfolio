@@ -75,6 +75,7 @@
   transition: all 0.3s ease;
   width: 220px;
   background-color: $secondary-bg-color;
+  border-right: 1px solid $primary-bg-color;
 }
 
 .sidebar ul {
