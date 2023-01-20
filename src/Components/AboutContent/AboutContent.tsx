@@ -1,5 +1,4 @@
 import './AboutContent.scss'
-import profilePic from '../../assets/about-pp-bw.png'
 import MainDualContent from '../MainDualContent/MainDualContent'
 
 export default function AboutContent() {
