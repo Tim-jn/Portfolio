@@ -13,10 +13,10 @@
   font-size: 48px;
   width: 100%;
   color: $primary-font-color;
+  transition: all 0.15s;
 }
 
 .skills-icon:hover {
-  transition: all 0.15s;
   color: $third-font-color;
   filter: drop-shadow($red-shadow);
 }

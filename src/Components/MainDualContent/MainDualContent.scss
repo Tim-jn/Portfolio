@@ -40,8 +40,15 @@
 }
 
 .content-paragraph a {
-  color: $third-font-color;
+  color: $primary-font-color;
   text-decoration: none;
+  background-color: $third-font-color;
+  padding: 2px 4px;
+  transition: all 0.25s ease;
+}
+
+.content-paragraph a:hover {
+  color: $primary-bg-color;
 }
 
 .image-content {

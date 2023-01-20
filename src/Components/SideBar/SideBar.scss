@@ -11,10 +11,10 @@
   cursor: pointer;
   border-bottom: 2px solid $third-font-color;
   padding: 2px 8px;
+  transition: all 0.25s;
 }
 
 .home-contact:hover {
-  transition: all 0.25s;
   background-color: $third-font-color;
   color: $primary-bg-color !important;
 }
@@ -43,10 +43,10 @@
   cursor: pointer;
   border-bottom: 2px solid $third-font-color;
   padding: 2px 8px;
+  transition: all 0.25s;
 }
 
 .menu:hover {
-  transition: all 0.25s;
   background-color: $third-font-color;
   color: $primary-bg-color;
 }
@@ -64,10 +64,10 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .sidebar-active .close:hover {
-  transition: all 0.3s ease-in-out;
   rotate: 90deg;
 }
 
@@ -115,6 +115,7 @@
   font-size: calc($p-desktop-size)- 6px;
   position: relative;
   overflow: hidden;
+  transition: all 0.2s;
 }
 
 .sidebar-active .link-name::before {
@@ -127,16 +128,15 @@
   width: 130px;
   z-index: -1;
   border-radius: 1px;
+  transition: all 0.4s ease;
 }
 
 .sidebar-active .link-name:hover::before {
   left: 0px;
-  transition: all 0.4s ease;
 }
 
 .sidebar-active .link-name:hover {
   color: $primary-font-color;
-  transition: all 0.2s;
 }
 
 .sidebar .profile-content {
