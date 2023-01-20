@@ -12,16 +12,15 @@ export default function AboutContent() {
         "Voyageur, j'ai eu l'occasion de visiter des dizaines de pays, et j'ai vécu 6 mois au Japon en 2021, à Sapporo.",
       ]}
       link={
-        <p className="about-paragraph">
-          Cliquez sur
+        <p className="content-paragraph">
+          Cliquez sur{'  '}
           <a
             href="https://cvdesignr.com/p/61f0091f46d5e"
             target="_blank"
             rel="noreferrer"
           >
-            {' '}
-            ce lien{' '}
-          </a>
+            ce lien
+          </a>{' '}
           pour voir mon CV.
         </p>
       }
