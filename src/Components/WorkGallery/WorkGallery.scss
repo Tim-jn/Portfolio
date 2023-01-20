@@ -240,12 +240,12 @@
   display: flex;
   text-decoration: none;
   border-bottom: 2px solid $third-font-color;
-  width: 200px;
+  width: 180px;
   height: 42px;
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   font-size: calc($p-desktop-size)-3px;
   color: $third-font-color;
@@ -263,7 +263,7 @@
   top: 0;
   background-color: $third-font-color;
   height: 42px;
-  width: 200px;
+  width: 180px;
   z-index: -1;
   border-radius: 1px;
   transition: all 0.4s ease;
