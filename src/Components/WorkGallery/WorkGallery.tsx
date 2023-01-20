@@ -24,7 +24,7 @@ const data = [
     live: 'https://rimarok.com/',
     source: 'https://github.com/Skaant/rimarok',
     description:
-      'Refonte du site web professionel https://rimarok.com en partenariat avec Romaric Ruga, développeur Fullstack freelance.',
+      'Refonte du site web professionel Rimarok.com en partenariat avec Romaric Ruga, développeur Fullstack freelance.',
     languages: 'React, TypeScript, JAMStack, Bootstrap/SCSS',
   },
   {
@@ -35,8 +35,8 @@ const data = [
     live: 'https://timjn-shortly.netlify.app',
     source: 'https://github.com/Tim-jn/shortly',
     description:
-      'This project is part of the Frontend Mentor challenges. Your challenge is to build out this URL shortening API landing page and get it looking as close to the design as possible.',
-    languages: 'React, TypeScript and Sass',
+      "Ce projet fait partie des challenges Frontend Mentor. Le défi consiste à reproduire cette page, à y intégrer l'API de raccourcissement d'URL et à la faire ressembler autant que possible à la maquette.",
+    languages: 'React, TypeScript, Sass',
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const data = [
     preview: PrevJeanmartth,
     live: 'https://jeanmartth.be',
     description:
-      "This project is a website for a heating company. It was built to develop my wordpress skills. There's no source code for this project.",
+      "Création et gestion du site web professionel d'une entreprise de chauffage.",
     languages: 'WordPress',
   },
   {
@@ -56,8 +56,8 @@ const data = [
     live: 'https://timjn-fylo.netlify.app/',
     source: 'https://github.com/Tim-jn/Fylo',
     description:
-      'This project is part of the Frontend Mentor challenges. Your challenge is to build out this landing page and get it looking as close to the design as possible.',
-    languages: 'React, TypeScript and Sass',
+      'Ce projet fait partie des challenges Frontend Mentor. Le défi consiste à reproduire cette page et à la faire ressembler autant que possible à la maquette.',
+    languages: 'React, TypeScript, Sass',
   },
 ]
 
@@ -79,7 +79,11 @@ export default function WorkGallery() {
       ></div>
       <div className="text-modal">
         <span className="title">{object.name}</span>
-        <span className="description">{object.description}</span>
+        <span className="description">
+          {object.description}
+          <br />
+          Technologie(s) utilisée(s) : {object.languages}.
+        </span>
         <div className="links-modal">
           <a href={object.live} target="_blank" rel="noreferrer">
             Version live
@@ -102,28 +106,46 @@ export default function WorkGallery() {
     <div className="gallery-content">
       <h2 className="work-title">Projets récents</h2>
       <div className="work-content">
-        {data.map(({ id, name, preview, image, description, live, source }) => {
-          return (
-            <>
-              <div
-                key={id}
-                className={`work-item work-item-${id} ` + getClass(id)}
-                onClick={() => {
-                  setActive({ id, name, preview, description, live, source })
-                  setShowModal(true)
-                }}
-              >
-                <div className="work-miniature">
-                  <p className="more-info">plus d'infos ?</p>
-                  <img
-                    src={image}
-                    alt={name + ' project'}
-                    className="work-image"
-                  />
+        {data.map(
+          ({
+            id,
+            name,
+            preview,
+            image,
+            description,
+            live,
+            source,
+            languages,
+          }) => {
+            return (
+              <>
+                <div
+                  key={id}
+                  className={`work-item work-item-${id} ` + getClass(id)}
+                  onClick={() => {
+                    setActive({
+                      id,
+                      name,
+                      preview,
+                      description,
+                      live,
+                      source,
+                      languages,
+                    })
+                    setShowModal(true)
+                  }}
+                >
+                  <div className="work-miniature">
+                    <p className="more-info">plus d'infos ?</p>
+                    <img
+                      src={image}
+                      alt={name + ' project'}
+                      className="work-image"
+                    />
+                  </div>
                 </div>
-              </div>
-              {showModal ? <Modal object={active} /> : null}
-              {/* {showModal ? (
+                {showModal ? <Modal object={active} /> : null}
+                {/* {showModal ? (
                 <div
                   className={
                     !setShowModal
@@ -138,15 +160,14 @@ export default function WorkGallery() {
                   ></div>
                 </div>
               ) : null} */}
-            </>
-          )
-        })}
+              </>
+            )
+          }
+        )}
       </div>
       <div className="more-work">
-        <hr />
-        <br />
         <div className="more-work-text">
-          Vous voulez voir plus de projets ? Cliquez sur le bouton ci-dessous !
+          Intéressé(e) par mon travail ? Cliquez sur le lien ci-dessous !
         </div>
         <button className="see-more">
           <a
@@ -155,7 +176,7 @@ export default function WorkGallery() {
             className="see-more-link"
             rel="noreferrer"
           >
-            Voir plus
+            Plus de projets
           </a>
         </button>
       </div>
