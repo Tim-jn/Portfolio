@@ -40,15 +40,26 @@
 }
 
 .content-paragraph a {
-  color: $primary-font-color;
+  color: $third-font-color;
   text-decoration: none;
-  background-color: $third-font-color;
-  padding: 2px 4px;
   transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.content-paragraph a:hover {
-  color: $primary-bg-color;
+.content-paragraph a::after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  bottom: -3px;
+  left: -3%;
+  background-color: $third-font-color;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.content-paragraph a:hover::after {
+  width: 105%;
 }
 
 .image-content {

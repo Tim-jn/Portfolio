@@ -98,7 +98,7 @@
 
 .links-modal a {
   text-decoration: none;
-  color: $secondary-font-color;
+  color: $primary-bg-color;
   margin-top: 18px;
   margin-left: 20px;
   display: flex;
@@ -118,23 +118,18 @@
 .links-modal a::before {
   content: '';
   position: absolute;
-  left: -130px;
+  left: -140px;
   top: 0;
   background-color: $third-font-color;
   height: 30px;
   width: 130px;
   z-index: -1;
   border-radius: 1px;
+  transition: all 0.4s ease;
 }
 
 .links-modal a:hover::before {
   left: 0px;
-  transition: all 0.4s ease;
-}
-
-.links-modal a:hover {
-  color: $primary-font-color;
-  transition: all 0.3s;
 }
 
 .work-content {
