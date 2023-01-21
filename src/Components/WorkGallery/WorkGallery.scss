@@ -17,8 +17,8 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   text-align: right;
-  margin-top: -70px;
   margin-bottom: 80px;
+  margin-top: -17%;
 }
 
 .work-modal {
@@ -241,20 +241,18 @@
 .see-more-link {
   display: flex;
   text-decoration: none;
-  border-bottom: 2px solid $third-font-color;
   width: 180px;
   height: 42px;
   justify-content: center;
   align-items: center;
-  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: calc($p-desktop-size)-3px;
-  color: $third-font-color;
+  color: $primary-bg-color;
+  background-color: $secondary-bg-color;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  font-weight: 600;
   transition: all 0.2s ease;
 }
 
@@ -276,7 +274,7 @@
 }
 
 .see-more-link:hover {
-  color: $primary-font-color;
+  color: $secondary-bg-color;
 }
 
 .slide-work {
@@ -344,21 +342,21 @@
 }
 
 .more-work {
+  position: absolute;
+  bottom: 14px;
   display: flex;
   flex-direction: column;
-  color: $primary-font-color;
+  justify-content: center;
   align-items: center;
-  margin-top: 15%;
-  margin-bottom: 5%;
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  height: 160px;
+  z-index: 10;
 }
 
 .more-work-text {
   margin-bottom: 20px;
   font-size: $p-desktop-size;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 // tablet

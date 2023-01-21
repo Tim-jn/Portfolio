@@ -187,7 +187,7 @@ body {
 
 .work {
   position: relative;
-  height: 150vh;
+  height: 120vh;
   width: 100%;
 }
 
@@ -211,6 +211,7 @@ body {
   background-position-y: 100%;
   background-position-x: 100%;
   background-size: cover;
+  z-index: -1;
 }
 
 .contact {
@@ -222,6 +223,25 @@ body {
   overflow: hidden;
 }
 
+// Custom square
+
+.work .arrow-down {
+  content: url('./assets/arrow-down.svg');
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.custom-square {
+  background-color: $secondary-font-color;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 18vh;
+  z-index: -1;
+}
+
 // Custom shape for contact content
 
 .custom-shape-divider-bottom-1674235557 {
@@ -231,6 +251,7 @@ body {
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1674235557 svg {

@@ -98,6 +98,8 @@ function App() {
         <div className="work-section" ref={addToRefs}>
           <WorkGallery />
         </div>
+        <div className="arrow-down"></div>
+        <div className="custom-square"></div>
         <div className="custom-shape-divider-bottom-1674235557">
           <svg
             data-name="Layer 1"
