@@ -71,6 +71,23 @@ body {
   text-shadow: $red-shadow;
 }
 
+// Scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary-bg-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary-bg-color;
+}
+
 /* 
 
 //// Pages styles /////
