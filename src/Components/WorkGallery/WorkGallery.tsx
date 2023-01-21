@@ -136,7 +136,7 @@ export default function WorkGallery() {
                   }}
                 >
                   <div className="work-miniature">
-                    <p className="more-info">plus d'infos ?</p>
+                    <p className="more-info">Informations</p>
                     <img
                       src={image}
                       alt={name + ' project'}
