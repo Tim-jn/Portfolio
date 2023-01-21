@@ -22,6 +22,9 @@ export default function SideBar() {
       <button className="menu" onClick={toggleSidebar}>
         Menu
       </button>
+      <a href="#home" className="home-logo">
+        <div className="logo"></div>
+      </a>
       <div className="close" onClick={toggleSidebar}></div>
       <button className="home-contact">
         <a href="#contact">Contact</a>
