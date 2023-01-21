@@ -1,5 +1,7 @@
 @import '../../App.scss';
 
+// fixed right button CONTACT
+
 .home-contact {
   position: fixed;
   top: 50%;
@@ -11,12 +13,27 @@
   cursor: pointer;
   border-bottom: 2px solid $third-font-color;
   padding: 2px 8px;
-  transition: all 0.25s;
+  transition: all 0.25s ease;
+}
+
+.home-contact::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  width: 100%;
+  background-color: $third-font-color;
+  transition: all 0.3s ease;
+  z-index: -1;
 }
 
 .home-contact:hover {
-  background-color: $third-font-color;
   color: $primary-bg-color !important;
+}
+
+.home-contact:hover::after {
+  height: 100%;
 }
 
 .home-contact a {
@@ -24,12 +41,7 @@
   color: inherit;
 }
 
-.sidebar {
-  height: 100vh;
-  position: fixed;
-  transition: all 0.3s ease;
-  z-index: 10;
-}
+// left fixed button MENU
 
 .menu {
   position: fixed;
@@ -46,10 +58,76 @@
   transition: all 0.25s;
 }
 
-.menu:hover {
+.menu::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  width: 100%;
   background-color: $third-font-color;
-  color: $primary-bg-color;
+  transition: all 0.3s ease;
+  z-index: -1;
 }
+
+.menu:hover {
+  color: $primary-bg-color !important;
+}
+
+.menu:hover::after {
+  height: 100%;
+}
+
+// Closed sidebar
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.sidebar ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar ul li {
+  position: relative;
+  height: 70px;
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: $primary-bg-color;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sidebar .link-name {
+  display: none;
+  transition: all 0.15s ease;
+}
+
+.sidebar .profile-content {
+  position: absolute;
+  color: $secondary-font-color;
+  bottom: 0;
+  left: 20px;
+  width: 100%;
+}
+
+.sidebar .profile-details {
+  display: none;
+  transition: all 0.3s ease;
+  padding: 10px 6px;
+  height: 60px;
+}
+
+// Active sidebar
 
 .sidebar-active .menu {
   display: none;
@@ -81,31 +159,6 @@
   width: 220px;
   background-color: $secondary-bg-color;
   border-right: 1px solid $primary-bg-color;
-}
-
-.sidebar ul {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.sidebar ul li {
-  position: relative;
-  height: 70px;
-  list-style: none;
-}
-
-.sidebar ul li a {
-  color: $primary-bg-color;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.sidebar .link-name {
-  display: none;
-  transition: all 0.15s ease;
 }
 
 .sidebar-active .link-name {
@@ -145,31 +198,16 @@
   color: $primary-font-color;
 }
 
-.sidebar .profile-content {
-  position: absolute;
-  color: $secondary-font-color;
-  bottom: 0;
-  left: 20px;
-  width: 100%;
-}
-
-.sidebar .profile-details {
-  display: none;
-  transition: all 0.3s ease;
-  padding: 10px 6px;
-  height: 60px;
-}
-
 .sidebar-active .profile-details {
   display: block;
 }
 
-.profile-details {
+.sidebar-active .profile-details {
   color: $primary-bg-color;
   white-space: nowrap;
 }
 
-.profile-details .name {
+.sidebar-active .profile-details .name {
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
@@ -177,7 +215,7 @@
   margin-bottom: 5px;
 }
 
-.profile-details .job {
+.sidebar-active .profile-details .job {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 600;
