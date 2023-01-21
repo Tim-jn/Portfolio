@@ -2,7 +2,6 @@
 
 .about .content-paragraph {
   color: $primary-bg-color;
-  margin-top: 20px;
   font-size: $p-desktop-size;
 }
 
@@ -17,6 +16,10 @@
 
 .about .content-paragraph a {
   color: $third-font-color;
+}
+
+.about .content-paragraph a::after {
+  left: -2%;
 }
 
 // tablet

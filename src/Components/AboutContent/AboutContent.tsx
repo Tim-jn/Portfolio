@@ -12,15 +12,13 @@ export default function AboutContent() {
       ]}
       link={
         <p className="content-paragraph">
-          Cliquez sur{'  '}
           <a
             href="https://cvdesignr.com/p/61f0091f46d5e"
             target="_blank"
             rel="noreferrer"
           >
-            ce lien
-          </a>{' '}
-          pour voir mon CV.
+            🡣 CURRICULUM VITAE
+          </a>
         </p>
       }
       // image={<img src={profilePic} alt="Tim Jeanmart" />}
