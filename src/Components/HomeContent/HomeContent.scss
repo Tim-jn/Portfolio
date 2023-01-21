@@ -48,8 +48,9 @@
 .arrow-down {
   content: url('../../assets/arrow-down.svg');
   position: absolute;
-  bottom: 5px;
+  bottom: 6px;
   left: 50%;
+  transform: translate(-50%, -0%);
 }
 
 // tablet
