@@ -5,6 +5,7 @@ import AboutContent from './Components/AboutContent/AboutContent'
 import SkillsContent from './Components/SkillsContent/SkillsContent'
 import WorkGallery from './Components/WorkGallery/WorkGallery'
 import ContactContent from './Components/ContactContent/ContactContent'
+import BackToTop from './Components/BackToTop/BackToTop'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -64,6 +65,7 @@ function App() {
   return (
     <main className="App">
       <SideBar />
+      <BackToTop />
       <section id="home" className="home" ref={homeRef}>
         <div className="home-section">
           <Title />
