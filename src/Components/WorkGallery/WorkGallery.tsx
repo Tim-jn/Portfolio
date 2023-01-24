@@ -105,6 +105,7 @@ export default function WorkGallery() {
   return (
     <div className="gallery-content">
       <h2 className="work-title">Projets récents</h2>
+      <div className="arrow-spiral"></div>
       <div className="work-content">
         {data.map(
           ({
@@ -167,7 +168,8 @@ export default function WorkGallery() {
       </div>
       <div className="more-work">
         <div className="more-work-text">
-          Intéressé(e) par mon travail ? Cliquez sur le lien ci-dessous !
+          Intéressé(e) par mon travail ? <br />
+          Cliquez sur le lien ci-dessous pour voir plus de projets !
         </div>
         <button className="see-more">
           <a
@@ -176,7 +178,7 @@ export default function WorkGallery() {
             className="see-more-link"
             rel="noreferrer"
           >
-            Plus de projets
+            Voir plus
           </a>
         </button>
       </div>
