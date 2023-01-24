@@ -163,7 +163,7 @@
 
 .sidebar-active .link-name {
   display: flex;
-  border-bottom: 2px solid $primary-bg-color;
+  border-bottom: 2px solid $third-font-color;
   width: 130px;
   height: 42px;
   justify-content: center;
@@ -219,6 +219,30 @@
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+// Social bar
+
+.sidebar-active .social-bar {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  justify-content: space-evenly;
+  padding: 0 20px 10px 20px;
+}
+
+.sidebar-active .social-icons {
+  cursor: pointer;
+  height: 30px;
+  width: 25px;
+  background: $secondary-bg-color;
+  padding: 0;
+}
+
+.sidebar-active .social-icons:hover {
+  color: $primary-bg-color;
 }
 
 // // normal screen mobile

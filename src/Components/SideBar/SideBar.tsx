@@ -8,6 +8,7 @@
 //   faHome,
 // } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import SocialBar from '../SocialBar/SocialBar'
 import './SideBar.scss'
 
 export default function SideBar() {
@@ -60,6 +61,7 @@ export default function SideBar() {
         </li>
       </ul>
       <div className="profile-content">
+        <SocialBar />
         <div className="profile-details">
           <div className="name">Tim Jeanmart</div>
           <div className="job">Développeur Front-End</div>
