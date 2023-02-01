@@ -17,9 +17,9 @@ export default function SkillsContent() {
     <MainDualContent
       title={'Compétences'}
       paragraphs={[
-        'Développeur Front-End junior de 26 ans, spécialisé en React et basé à Liège, Belgique.',
-        "Passionné par le monde du web, j'ai commencé mon apprentissage dans une formation OpenClassrooms, et je me forme aujourd'hui principalement en autodidacte ou par le moyen de formations courtes. J'ai un intérêt particulier pour les interfaces épurées et l'expérience utilisateur (UX Design).",
-        "Voyageur, j'ai eu l'occasion de visiter des dizaines de pays, et j'ai vécu 6 mois au Japon en 2021, à Sapporo.",
+        "Depuis le début de mon parcours en tant que développeur, j'ai pu enchaîner différentes formations au sein d'organismes reconnus tels qu'OpenClassrooms, Udemy, Udacity, Dyma et bien d'autres, afin de monter en compétences.",
+        'Je construit des sites Web avec les meilleures pratiques, réactifs, rapides et faciles à utiliser. Le principal domaine de mon expertise est le développement Front-End, HTML, CSS, JS (React).',
+        "J'ai également une expérience de développeur Full-Stack, plus modeste, avec NodeJS et PostgreSQL, ainsi qu'avec un CMS, WordPress.",
       ]}
       link={
         <p className="content-paragraph">
@@ -39,8 +39,8 @@ export default function SkillsContent() {
           >
             LinkedIn
           </a>{' '}
-          pour plus de details. Si vous avez une question précise, n'hésitez pas
-          à me contacter !
+          pour plus de details, et si vous avez une question, n'hésitez pas à me
+          contacter !
         </p>
       }
       image={

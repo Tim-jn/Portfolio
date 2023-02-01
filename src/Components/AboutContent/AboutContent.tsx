@@ -6,9 +6,9 @@ export default function AboutContent() {
     <MainDualContent
       title={'À propos'}
       paragraphs={[
-        'Développeur Front-End junior de 26 ans, spécialisé en React et basé à Liège, Belgique.',
-        "Passionné par le monde du web, j'ai commencé mon apprentissage dans une formation OpenClassrooms, et je me forme aujourd'hui principalement en autodidacte ou par le moyen de formations courtes. J'ai un intérêt particulier pour les interfaces épurées et l'expérience utilisateur (UX Design).",
-        "Voyageur, j'ai eu l'occasion de visiter des dizaines de pays, et j'ai vécu 6 mois au Japon en 2021, à Sapporo.",
+        "Je suis Tim, un développeur web passionné, principalement axé Front-End et spécialisé en React. J'ai 26 ans et je suis basé à Liège, en Belgique.",
+        'Autodidacte, organisé et rigoureux, je réalise toujours les projets qui me sont confiés avec professionalisme et minutie.',
+        "J'aime voyager. J'ai eu la chance de pouvoir visiter des dizaines de pays, et mon intérêt pour la culture asiatique (plus particulièrement la culture Japonaise) m'a amené à vivre 6 mois au Japon en 2021, à Sapporo.",
       ]}
       link={
         <p className="content-paragraph">
@@ -21,7 +21,6 @@ export default function AboutContent() {
           </a>
         </p>
       }
-      // image={<img src={profilePic} alt="Tim Jeanmart" />}
     />
   )
 }
