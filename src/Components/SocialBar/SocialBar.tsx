@@ -4,7 +4,7 @@ import './SocialBar.scss'
 
 export default function SocialBar() {
   return (
-    <div className="social-bar">
+    <div className="social-side social-bar">
       <a
         className="social-icon"
         href="https://www.linkedin.com/in/timjeanmart/"

@@ -12,7 +12,7 @@
   z-index: 10;
 }
 
-.linkedin {
+.social-bar .linkedin {
   height: 35px !important;
 }
 
@@ -21,7 +21,7 @@
   color: $third-font-color;
 }
 
-.social-icons {
+.social-bar .social-icons {
   cursor: pointer;
   height: 37px;
   width: 32px;
@@ -30,35 +30,25 @@
   transition: all 0.25s ease;
 }
 
-.social-icons:hover {
+.social-bar .social-icons:hover {
   color: $secondary-bg-color;
   border-radius: 2px;
 }
 
-.social-text {
+.social-bar .social-text {
   font-size: 0;
 }
 
 // tablet
 
 @media screen and (max-width: 992px) {
-  .social-icons {
-    height: 26px;
-    width: 21px;
-  }
 }
 
 // normal screen mobile
 
 @media screen and (max-width: 768px) {
-  .social-bar {
-    width: 100px;
-    height: 52px;
-    padding: 6px 14px;
-  }
-
   .social-icons {
-    height: 21px;
-    width: 17px;
+    height: 28px;
+    width: 24px;
   }
 }

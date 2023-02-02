@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-// fixed right button CONTACT
+// fixed left and right buttons
 
 .home-contact {
   position: fixed;
@@ -16,32 +16,12 @@
   transition: all 0.25s ease;
 }
 
-.home-contact::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 0%;
-  width: 100%;
-  background-color: $third-font-color;
-  transition: all 0.3s ease;
-  z-index: -1;
-}
-
-.home-contact:hover {
-  color: $primary-bg-color !important;
-}
-
-.home-contact:hover::after {
-  height: 100%;
-}
-
 .home-contact a {
   text-decoration: none;
   color: inherit;
+  width: 100%;
+  height: 100%;
 }
-
-// left fixed button MENU
 
 .menu {
   position: fixed;
@@ -58,24 +38,46 @@
   transition: all 0.25s;
 }
 
-.menu::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 0%;
-  width: 100%;
-  background-color: $third-font-color;
-  transition: all 0.3s ease;
-  z-index: -1;
-}
+@media screen and (min-width: 1200px) {
+  .home-contact::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: $third-font-color;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
 
-.menu:hover {
-  color: $primary-bg-color !important;
-}
+  .home-contact:hover {
+    color: $primary-bg-color !important;
+  }
 
-.menu:hover::after {
-  height: 100%;
+  .home-contact:hover::after {
+    height: 100%;
+  }
+
+  .menu::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: $third-font-color;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+
+  .menu:hover {
+    color: $primary-bg-color !important;
+  }
+
+  .menu:hover::after {
+    height: 100%;
+  }
 }
 
 // Closed sidebar
@@ -83,11 +85,14 @@
 .sidebar {
   height: 100vh;
   position: fixed;
+  width: 0px;
+  top: 0;
+  left: 0;
   transition: all 0.3s ease;
-  z-index: 10;
+  z-index: 2;
 }
 
-.sidebar ul {
+.sidebar nav {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -95,21 +100,16 @@
   align-items: center;
 }
 
-.sidebar ul li {
+.sidebar nav li {
   position: relative;
   height: 70px;
   list-style: none;
 }
 
-.sidebar ul li a {
+.sidebar nav li a {
   color: $primary-bg-color;
   text-decoration: none;
   white-space: nowrap;
-}
-
-.sidebar .link-name {
-  display: none;
-  transition: all 0.15s ease;
 }
 
 .sidebar .profile-content {
@@ -121,17 +121,11 @@
 }
 
 .sidebar .profile-details {
-  display: none;
-  transition: all 0.3s ease;
   padding: 10px 6px;
   height: 60px;
 }
 
 // Active sidebar
-
-.sidebar-active .menu {
-  display: none;
-}
 
 .sidebar-active .close {
   content: url('../../assets/close.svg');
@@ -149,9 +143,9 @@
 .sidebar-active .logo {
   content: url('../../assets/logo-tj.webp');
   position: absolute;
-  top: 13%;
-  left: 40%;
-  height: 65px;
+  top: 14%;
+  left: 40.5%;
+  height: 54px;
 }
 
 .sidebar-active {
@@ -163,9 +157,8 @@
 
 .sidebar-active .link-name {
   display: flex;
-  border-bottom: 2px solid $third-font-color;
   width: 130px;
-  height: 42px;
+  height: 35px;
   justify-content: center;
   align-items: center;
   font-weight: 400;
@@ -183,7 +176,7 @@
   left: -130px;
   top: 0;
   background-color: $third-font-color;
-  height: 42px;
+  height: 35px;
   width: 130px;
   z-index: -1;
   border-radius: 1px;
@@ -200,9 +193,6 @@
 
 .sidebar-active .profile-details {
   display: block;
-}
-
-.sidebar-active .profile-details {
   color: $primary-bg-color;
   white-space: nowrap;
 }
@@ -225,7 +215,7 @@
 
 .sidebar-active .social-bar {
   position: relative;
-  top: 0;
+  top: -15px;
   right: 0;
   height: 100%;
   width: 80%;
@@ -237,12 +227,51 @@
   cursor: pointer;
   height: 30px;
   width: 25px;
-  background: $secondary-bg-color;
+  background: none;
   padding: 0;
 }
 
 .sidebar-active .social-icons:hover {
   color: $primary-bg-color;
+}
+
+// small screen desktop
+
+@media screen and (max-width: 1200px) {
+  .menu-icon {
+    content: '';
+    background: url('../../assets/icon-menu.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    top: 30px;
+    left: 30px;
+    width: 35px;
+    height: 40px;
+    border-bottom: none;
+  }
+
+  .home-contact-icon {
+    content: '';
+    background: url('../../assets/icon-contact.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-bottom: none;
+  }
+
+  .menu-icon:hover,
+  .home-contact-icon:hover {
+    background-color: none;
+  }
+
+  .home-contact a {
+    font-size: 0;
+  }
 }
 
 // // normal screen mobile
@@ -257,7 +286,7 @@
 //   width: 180px;
 // }
 
-//   .sidebar ul li a .icons {
+//   .sidebar nav li a .icons {
 //     width: 20px;
 //   }
 
@@ -282,11 +311,11 @@
 //   font-size: 14px;
 // }
 
-//   .sidebar ul li .tooltip {
+//   .sidebar nav li .tooltip {
 //     display: none;
 //   }
 
-//   .sidebar ul li {
+//   .sidebar nav li {
 //     margin: 0 5%;
 //   }
 // }

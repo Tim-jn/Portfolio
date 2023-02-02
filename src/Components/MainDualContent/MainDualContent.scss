@@ -64,13 +64,22 @@
 
 .image-content {
   position: absolute;
-  right: 12%;
+  right: 8%;
 }
 
 .image-content img {
   height: 300px;
   border-radius: 2px;
   opacity: 0.9;
+}
+
+// small screen desktop
+
+@media screen and (max-width: 1200px) {
+  .image-content {
+    position: absolute;
+    right: 0%;
+  }
 }
 
 // tablet
