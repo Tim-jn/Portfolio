@@ -11,8 +11,14 @@
 .title-box-content {
   position: relative;
   margin-bottom: 30px;
-  padding: 90px 60px 110px 60px;
-  text-align: center;
+  max-width: 970px;
+  max-height: 356px;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 2px solid $secondary-bg-color;
   background: $primary-bg-color;
 }
@@ -22,6 +28,7 @@
   font-weight: 400;
   color: $primary-font-color;
   z-index: 2;
+  margin-bottom: 30px;
 }
 
 .border-box {
@@ -53,11 +60,35 @@
   transform: translate(-50%, -0%);
 }
 
+// small screen desktop
+
+@media screen and (max-width: 1200px) {
+  .main-title {
+    font-size: calc($h1-tablet-size)-28px;
+  }
+
+  .title-text {
+    font-size: $h1-tablet-size;
+  }
+
+  .title-box-content {
+    max-height: 340px;
+  }
+}
+
 // tablet
 
 @media screen and (max-width: 992px) {
-  .main-title-content {
-    font-size: $h1-tablet-size;
+  .main-title {
+    font-size: calc($h1-mobile-size)-28px;
+  }
+
+  .title-text {
+    font-size: calc($h1-mobile-size);
+  }
+
+  .title-box-content {
+    max-height: 300px;
   }
 }
 
